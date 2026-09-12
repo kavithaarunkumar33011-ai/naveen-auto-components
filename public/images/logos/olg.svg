@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+  <rect width="300" height="120" fill="#ffffff"/>
+  <!-- Red Box Logo Emblem -->
+  <rect x="20" y="15" width="260" height="60" fill="#e53935" rx="4"/>
+  <!-- OLG letters with embedded waveform line -->
+  <text x="70" y="60" font-family="Arial, sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="-2">O</text>
+  <path d="M 115 50 L 125 30 L 135 65 L 145 35 L 155 50" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="160" y="60" font-family="Arial, sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="-2">G</text>
+  <!-- Text below -->
+  <text x="150" y="100" font-family="Arial, sans-serif" font-weight="800" font-size="18" fill="#e53935" text-anchor="middle" letter-spacing="1">ON LOAD GEARS</text>
+</svg>

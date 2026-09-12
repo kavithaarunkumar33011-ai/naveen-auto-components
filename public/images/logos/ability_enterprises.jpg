@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 150" width="650" height="150">
+  <defs>
+    <!-- Silver outer ring gradient -->
+    <linearGradient id="silverRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#e6e7e8"/>
+      <stop offset="50%" stop-color="#b1b3b6"/>
+      <stop offset="85%" stop-color="#808285"/>
+      <stop offset="100%" stop-color="#58595b"/>
+    </linearGradient>
+    
+    <!-- Inner circle background gradient -->
+    <linearGradient id="innerCircleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f1f2f2"/>
+      <stop offset="100%" stop-color="#d1d3d4"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Clean card background -->
+  <rect width="650" height="150" fill="#ffffff" rx="12"/>
+
+  <!-- Logo Group -->
+  <g transform="translate(15, 0)">
+    <!-- Outer thin ring contour -->
+    <circle cx="75" cy="75" r="62" fill="none" stroke="#6d6e71" stroke-width="1.5"/>
+
+    <!-- Metallic Silver Ring -->
+    <circle cx="75" cy="75" r="56" fill="none" stroke="url(#silverRingGrad)" stroke-width="10" filter="url(#softShadow)"/>
+
+    <!-- Inner Metallic Accent Line -->
+    <circle cx="75" cy="75" r="51" fill="none" stroke="#939598" stroke-width="1"/>
+
+    <!-- Inner Circle Face -->
+    <circle cx="75" cy="75" r="50" fill="url(#innerCircleGrad)"/>
+
+    <!-- AE Monogram Symbol inside Inner Circle -->
+    <g transform="translate(75, 75)">
+      <!-- Green 'A' Monogram Element -->
+      <!-- Outer left diagonal leg -->
+      <polygon points="-36,32 -18,-32 -4,-32 -22,32" fill="#009a44"/>
+      <!-- Inner diagonal and crossbar -->
+      <polygon points="-32,14 4,14 -2,32 -36,32" fill="#009a44"/>
+      
+      <!-- Red 'E' Monogram Element -->
+      <!-- Top bar -->
+      <polygon points="-10,-32 34,-32 34,-18 4,-18" fill="#e31b23"/>
+      <!-- Middle bar -->
+      <polygon points="-14,-5 30,-5 30,8 -8,8" fill="#e31b23"/>
+      <!-- Bottom bar -->
+      <polygon points="-36,32 36,32 36,18 -22,18" fill="#e31b23"/>
+      <!-- Vertical connecting bar -->
+      <polygon points="-12,-32 4,-32 -6,32 -22,32" fill="#e31b23" opacity="0.95"/>
+    </g>
+
+    <!-- Combined Brand Text -->
+    <!-- Green ABILITY -->
+    <text x="155" y="90" font-family="'Impact', 'Arial Black', 'Trebuchet MS', sans-serif" font-weight="900" font-size="46" fill="#009a44" letter-spacing="1.5">ABILITY</text>
+
+    <!-- Red ENTERPRISES -->
+    <text x="325" y="90" font-family="'Impact', 'Arial Black', 'Trebuchet MS', sans-serif" font-weight="900" font-size="46" fill="#e31b23" letter-spacing="1.5">ENTERPRISES</text>
+  </g>
+</svg>

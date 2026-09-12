@@ -1,0 +1,5 @@
+# Robots.txt for Naveen Auto Components - Heavy Engineering & Fabrication
+User-agent: *
+Allow: /
+
+Sitemap: https://www.naveenauto.com/sitemap.xml

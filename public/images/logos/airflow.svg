@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+  <rect width="300" height="120" fill="#ffffff" rx="8"/>
+  <g transform="translate(20, 20)">
+    <path d="M 10 35 Q 30 15 50 35 T 90 35" fill="none" stroke="#0072ce" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 20 50 Q 40 30 60 50 T 100 50" fill="none" stroke="#f57c00" stroke-width="4" stroke-linecap="round"/>
+    <text x="108" y="48" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#0b1e36" letter-spacing="1">AIRFLOW</text>
+  </g>
+</svg>

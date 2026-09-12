@@ -1,0 +1,203 @@
+/* Custom Industrial Palette & Overrides for Naveen Auto Components */
+:root {
+  --bs-navy: #0b1e36;
+  --bs-navy-dark: #071322;
+  --bs-amber: #f57c00;
+  --bs-amber-dark: #e65100;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #212529;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Custom Text & BG Colors */
+.text-navy {
+  color: #0b1e36 !important;
+}
+
+.bg-navy {
+  background-color: #0b1e36 !important;
+}
+
+.bg-navy-dark {
+  background-color: #071322 !important;
+}
+
+.text-warning {
+  color: #f57c00 !important;
+}
+
+.bg-warning {
+  background-color: #f57c00 !important;
+  color: #ffffff !important;
+}
+
+/* Typography Enhancements */
+.fw-extrabold {
+  font-weight: 800;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+.fs-8 {
+  font-size: 0.75rem;
+}
+
+.max-w-700 {
+  max-width: 700px;
+}
+
+/* Card Transitions */
+.transition-all {
+  transition: transform 0.25s ease, shadow 0.25s ease;
+}
+
+.service-card:hover, .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Nav Link Hover State */
+.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #f57c00 !important;
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: #f57c00 !important;
+  border-color: #f57c00 !important;
+  color: #ffffff !important;
+}
+
+.btn-warning:hover {
+  background-color: #e65100 !important;
+  border-color: #e65100 !important;
+  color: #ffffff !important;
+}
+
+.btn-navy {
+  background-color: #0b1e36 !important;
+  border-color: #0b1e36 !important;
+  color: #ffffff !important;
+}
+
+.btn-navy:hover {
+  background-color: #071322 !important;
+  border-color: #071322 !important;
+}
+
+/* Responsive Maps */
+.ratio-16x9 {
+  --bs-aspect-ratio: 56.25%;
+}
+
+/* Image Zoom Animation & Interactive Showcase Utilities */
+.zoom-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.zoom-image-wrapper .zoom-img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.6s ease;
+  transform: scale(1.0);
+}
+
+.zoom-image-wrapper:hover .zoom-img {
+  transform: scale(1.08);
+  filter: brightness(1.02) contrast(1.05);
+}
+
+/* Continuous Subtle Ken-Burns Pulse Animation option */
+.ken-burns-pulse {
+  animation: kenBurnsPulse 14s infinite alternate ease-in-out;
+}
+
+@keyframes kenBurnsPulse {
+  0% { transform: scale(1.0) translate(0, 0); }
+  50% { transform: scale(1.06) translate(-1%, -1%); }
+  100% { transform: scale(1.02) translate(1%, 0.5%); }
+}
+
+/* Hover Badge Overlay */
+.zoom-badge-overlay {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(11, 30, 54, 0.85);
+  backdrop-filter: blur(8px);
+  color: #f57c00;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(245, 124, 0, 0.4);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.zoom-image-wrapper:hover .zoom-badge-overlay {
+  opacity: 1;
+  background: rgba(245, 124, 0, 0.95);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(245, 124, 0, 0.4);
+}
+
+/* Lightbox Modal Custom Backdrop */
+.modal-zoom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #040911;
+  border-radius: 12px;
+}
+
+.modal-zoom-img {
+  max-height: 75vh;
+  object-fit: contain;
+  transition: transform 0.3s ease-out;
+}
+
+/* Client Card Animation & Hover Micro-Interactions */
+.client-card-hover {
+  transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.35s ease, border-color 0.35s ease !important;
+  border-top: 3px solid transparent !important;
+}
+
+.client-card-hover:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 16px 35px rgba(11, 30, 54, 0.14) !important;
+  border-top-color: #f57c00 !important;
+}
+
+.client-card-hover .client-logo-img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.client-card-hover:hover .client-logo-img {
+  transform: scale(1.08);
+}
+
+

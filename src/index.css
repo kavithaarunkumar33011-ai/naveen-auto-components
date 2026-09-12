@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography utilities */
+.fw-extrabold { font-weight: 800; }
+.tracking-tight { letter-spacing: -0.025em; }
+.fs-7 { font-size: 0.875rem; }
+
+/* Custom Theme Colors */
+.text-navy { color: #0b1e36 !important; }
+.bg-navy { background-color: #0b1e36 !important; }
+.btn-navy {
+  background-color: #0b1e36 !important;
+  border-color: #0b1e36 !important;
+  color: white;
+}
+.btn-navy:hover {
+  background-color: #071322 !important;
+  border-color: #071322 !important;
+  color: white;
+}
+
+.text-amber { color: #f57c00 !important; }
+.bg-amber { background-color: #f57c00 !important; }
+
+/* Service Card Hover Effects */
+.service-card-wrapper {
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+.service-card-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important;
+  border-color: #f57c00;
+}
+
+.service-icon-container {
+  width: 60px;
+  height: 60px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card-wrapper:hover .service-icon-container {
+  background-color: #0b1e36;
+}
+.service-card-wrapper:hover .service-icon-container i {
+  color: #f57c00 !important;
+}
+
+/* Brand Logo Icon */
+.brand-logo-icon {
+  font-family: 'JetBrains Mono', monospace;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #0b1e36; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #f57c00; }
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+.text-shadow-sm { text-shadow: 0 1px 3px rgba(0,0,0,0.6); }
+
+
+
+.service-card:hover .card-img-top-wrapper img { transform: scale(1.05); }
+
+
+/* Image Flash Hover Effect */
+.hover-flash-wrapper { position: relative; overflow: hidden; display: block; }
+.hover-flash-wrapper::before { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%); transform: skewX(-25deg); z-index: 2; transition: none; }
+.hover-flash-wrapper:hover::before { animation: flashSweep 0.7s ease-out forwards; }
+@keyframes flashSweep { 0% { left: -100%; } 100% { left: 200%; } }
+
+
+
+/* Testimonial Carousel Overrides */
+.testimonial-carousel .carousel-indicators { margin-bottom: 0; }
+.testimonial-carousel .carousel-control-prev, .testimonial-carousel .carousel-control-next { width: 5%; }
+
+
+/* Image Smooth Hover Zoom Effect */
+.img-zoom-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.img-zoom-wrapper img {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card:hover .img-zoom-wrapper img,
+.img-zoom-wrapper:hover img {
+  transform: scale(1.06);
+}
+
+
+/* Hide Native Carousel Controls for Testimonials */
+.testimonial-carousel .carousel-control-prev, .testimonial-carousel .carousel-control-next { display: none !important; }
+
+
+/* Custom Testimonial Track */
+.testimonial-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding-bottom: 20px; -ms-overflow-style: none; scrollbar-width: none; }
+.testimonial-track::-webkit-scrollbar { display: none; }
+.testimonial-card-wrapper { flex: 0 0 calc(33.333% - 1rem); scroll-snap-align: center; margin-right: 1.5rem; }
+@media (max-width: 991.98px) { .testimonial-card-wrapper { flex: 0 0 calc(50% - 0.75rem); } }
+@media (max-width: 767.98px) { .testimonial-card-wrapper { flex: 0 0 100%; margin-right: 0; } }
+
+/* Animated Social Media Icons System */
+.social-icon-animated {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon-topbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Individual Brand Hover Animations & Vivid Colors */
+.social-icon-facebook:hover {
+  background: #1877f2 !important;
+  color: #ffffff !important;
+  transform: translateY(-4px) scale(1.15) rotate(-5deg);
+  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.5) !important;
+}
+
+.social-icon-twitter:hover {
+  background: #000000 !important;
+  color: #1da1f2 !important;
+  transform: translateY(-4px) scale(1.15) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(29, 161, 242, 0.5) !important;
+}
+
+.social-icon-linkedin:hover {
+  background: #0a66c2 !important;
+  color: #ffffff !important;
+  transform: translateY(-4px) scale(1.15) rotate(-5deg);
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.5) !important;
+}
+
+.social-icon-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-4px) scale(1.15) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(220, 39, 67, 0.5) !important;
+}
+
+.social-icon-youtube:hover {
+  background: #ff0000 !important;
+  color: #ffffff !important;
+  transform: translateY(-4px) scale(1.15) rotate(-5deg);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5) !important;
+}
+
+.social-icon-whatsapp:hover {
+  background: #25d366 !important;
+  color: #ffffff !important;
+  transform: translateY(-4px) scale(1.15) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5) !important;
+}
+
+/* Subtle icon pulse effect on hover */
+.social-icon-animated:hover i,
+.social-icon-topbar:hover i {
+  animation: iconPulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes iconPulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.18); }
+}
+
+/* Animated Footer Link System */
+.footer-animated-link {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.65) !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  padding: 3px 0;
+  max-width: 100%;
+}
+
+.footer-animated-link .footer-link-icon {
+  display: inline-block;
+  color: #f57c00;
+  font-size: 0.75rem;
+  margin-right: 8px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.3s ease;
+  opacity: 0.75;
+  flex-shrink: 0;
+}
+
+/* Glowing Sweep Underline */
+.footer-animated-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #f57c00 0%, #ffc107 100%);
+  border-radius: 2px;
+  transition: width 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 0 8px rgba(245, 124, 0, 0.7);
+}
+
+/* Hover Animation Effects */
+.footer-animated-link:hover {
+  color: #ffffff !important;
+  transform: translateX(6px);
+}
+
+.footer-animated-link:hover .footer-link-icon {
+  transform: translateX(4px) scale(1.3);
+  color: #ffc107 !important;
+  opacity: 1;
+}
+
+.footer-animated-link:hover::after {
+  width: 100%;
+}
+
+/* Industrial Slogan Motto Card Component */
+.slogan-motto-section {
+  background: #f8f9fa;
+  padding: 3.5rem 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.slogan-card-container {
+  background: linear-gradient(135deg, #0b1e36 0%, #071322 100%);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 1rem 3rem rgba(11, 30, 54, 0.25);
+  border: 1px solid rgba(245, 124, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.slogan-card-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f57c00 0%, #ffc107 50%, #f57c00 100%);
+}
+
+.slogan-ribbon-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto 2rem;
+  max-width: 900px;
+}
+
+.slogan-ribbon-side {
+  height: 52px;
+  width: 50px;
+  background: #f57c00;
+  border-radius: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(245, 124, 0, 0.4);
+}
+
+.slogan-ribbon-center {
+  flex-grow: 1;
+  background: linear-gradient(135deg, #f57c00 0%, #ff9100 50%, #ffc107 100%);
+  clip-path: polygon(30px 0%, 100% 0%, calc(100% - 30px) 100%, 0% 100%);
+  padding: 12px 30px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(245, 124, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+}
+
+.slogan-ribbon-text {
+  font-family: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: #0b1e36;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 991.98px) {
+  .slogan-ribbon-text {
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+  }
+  .slogan-ribbon-center {
+    clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
+    padding: 10px 18px;
+  }
+  .slogan-ribbon-side {
+    width: 30px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .slogan-ribbon-text {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  .slogan-ribbon-center {
+    clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+    padding: 8px 10px;
+  }
+  .slogan-ribbon-side {
+    display: none;
+  }
+}
+
+/* Light Shimmer Animation */
+.slogan-ribbon-center::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  animation: sloganShimmer 3.5s infinite ease-in-out;
+}
+
+@keyframes sloganShimmer {
+  0% { left: -100%; }
+  35% { left: 200%; }
+  100% { left: 200%; }
+}
+
+/* 3 Pillar Cards Inside Motto Section */
+.slogan-pillar-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.35s ease;
+  height: 100%;
+}
+
+.slogan-pillar-card:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: #f57c00;
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(245, 124, 0, 0.2);
+}
