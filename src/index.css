@@ -398,3 +398,155 @@ body {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(245, 124, 0, 0.2);
 }
+
+/* ==========================================================================
+   Comprehensive Mobile Responsiveness System
+   ========================================================================== */
+
+/* Prevent horizontal overflow on all screen sizes */
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablets and Mobile Landscape (<992px) */
+@media (max-width: 991.98px) {
+  .hero-carousel .carousel-item {
+    min-height: 580px !important;
+    height: auto !important;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-carousel .display-4 {
+    font-size: 2.2rem !important;
+  }
+
+  .slogan-card-container {
+    padding: 2rem 1.25rem !important;
+    border-radius: 14px !important;
+  }
+}
+
+/* Mobile Devices (<768px) */
+@media (max-width: 767.98px) {
+  /* Dynamic Typography for Small Screens */
+  .display-1 { font-size: 2.5rem !important; }
+  .display-2 { font-size: 2.2rem !important; }
+  .display-3 { font-size: 2.0rem !important; }
+  .display-4 { font-size: 1.75rem !important; line-height: 1.25 !important; }
+  .display-5 { font-size: 1.5rem !important; }
+  .display-6 { font-size: 1.3rem !important; }
+
+  .lead {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Hero Section Mobile Adjustments */
+  .hero-carousel .carousel-item {
+    min-height: 520px !important;
+    height: 90vh !important;
+  }
+
+  .hero-carousel .carousel-caption {
+    left: 4% !important;
+    right: 4% !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .hero-carousel .btn-lg {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* Page Banners on Mobile */
+  .page-banner {
+    padding: 3rem 0 !important;
+  }
+
+  /* Mobile Padding Adjustments for Sections */
+  .py-5 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  
+  .my-5 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  /* Contact Cards & Form */
+  .contact-info-card {
+    padding: 1.25rem !important;
+  }
+
+  /* Tables on Mobile */
+  .table-responsive {
+    border-radius: 8px;
+    font-size: 0.85rem;
+  }
+
+  /* Lightbox Modal on Mobile */
+  .modal-zoom-img {
+    max-height: 60vh !important;
+  }
+
+  /* Forms on Mobile */
+  .form-control, .form-select {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS */
+    padding: 0.75rem !important;
+  }
+}
+
+/* Small Smartphone Screens (<576px) */
+@media (max-width: 575.98px) {
+  .hero-carousel .carousel-item {
+    min-height: 480px !important;
+    height: 85vh !important;
+  }
+
+  .hero-carousel .display-4 {
+    font-size: 1.5rem !important;
+  }
+
+  .hero-carousel h3 {
+    font-size: 0.85rem !important;
+  }
+
+  /* Slogan section optimization */
+  .slogan-motto-section {
+    padding: 2rem 0 !important;
+  }
+
+  .slogan-pillar-card {
+    padding: 1.15rem !important;
+  }
+
+  /* Client logos grid on mobile */
+  .client-logo-card {
+    padding: 1rem !important;
+  }
+
+  /* Footer on mobile */
+  .footer {
+    padding-top: 2.5rem !important;
+    text-align: left;
+  }
+
+  /* Prevent button touch misalignment */
+  .btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
