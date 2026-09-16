@@ -5,7 +5,6 @@ import { SEO } from '../components/SEO';
 import { companyData } from '../data/companyData';
 import { servicesData } from '../data/servicesData';
 import { ServiceCard } from '../components/ServiceCard';
-import { IndustrialGraphic } from '../components/IndustrialGraphic';
 import { HeroCarousel } from '../components/HeroCarousel';
 
 export const Home = () => {
@@ -58,7 +57,7 @@ export const Home = () => {
         </Container>
       </section>
 
-      {/* Varsha Technologies & Naveen Auto Components Corporate Group Overview */}
+      {/* Dual Manufacturing Footprint Overview */}
       <section className="py-5 bg-white border-bottom">
         <Container className="py-lg-4">
           <div className="text-center max-w-900 mx-auto mb-5" data-aos="fade-up">
@@ -134,6 +133,123 @@ export const Home = () => {
         </Container>
       </section>
 
+      {/* About Section */}
+      <section className="py-5 bg-light border-bottom" data-aos="fade-up">
+        <Container className="py-lg-4">
+          <Row className="align-items-center g-5">
+            <Col lg={6}>
+              <Badge bg="warning" className="text-navy fw-bold px-3 py-2 text-uppercase mb-3" style={{ backgroundColor: '#f57c00', color: '#fff' }}>
+                About Naveen Auto Components
+              </Badge>
+              <h2 className="display-6 fw-bold text-navy mb-4">
+                Heavy Engineering & Turnkey Metal Fabrication
+              </h2>
+              <p className="lead text-secondary mb-4" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                Established in 2000, <strong>Naveen Auto Components (NAC)</strong> is a premier ISO 9001:2015 certified manufacturer specializing in heavy engineering, structural steelwork, storage tanks, and industrial process piping.
+              </p>
+              <p className="text-muted mb-4" style={{ lineHeight: '1.7' }}>
+                With over 350,000 sq. ft. across two plants in Chennai & Cuddalore, 1500+ MT monthly processing capacity, 6kW CNC Fiber Laser cutting, 16mm plate rolling, and 10 MT EOT cranes, NAC delivers complete end-to-end heavy fabrication solutions across India.
+              </p>
+              <div className="d-flex flex-wrap gap-3">
+                <Button as={Link} to="/about" variant="warning" size="lg" className="fw-bold px-4 py-3 shadow" style={{ backgroundColor: '#f57c00', borderColor: '#f57c00', color: '#fff' }}>
+                  Learn More About NAC <i className="bi bi-arrow-right ms-2"></i>
+                </Button>
+                <Button as={Link} to="/facilities" variant="outline-dark" size="lg" className="fw-bold px-4 py-3">
+                  Explore Infrastructure
+                </Button>
+              </div>
+            </Col>
+            <Col lg={6}>
+              <Card className="border-0 shadow-lg rounded-4 overflow-hidden" style={{ backgroundColor: '#071322', color: '#fff' }}>
+                <Card.Header className="bg-navy p-4 border-0" style={{ backgroundColor: '#0b1e36' }}>
+                  <div className="d-flex align-items-center">
+                    <i className="bi bi-shield-check text-warning fs-2 me-3" style={{ color: '#f57c00' }}></i>
+                    <div>
+                      <h3 className="h5 fw-bold text-white mb-0">Our Quality Standards</h3>
+                      <span className="small text-warning font-monospace">ISO 9001:2015 Certified Facilities</span>
+                    </div>
+                  </div>
+                </Card.Header>
+                <Card.Body className="p-4">
+                  <h4 className="fw-bold mb-3 h6 text-warning" style={{ color: '#f57c00' }}>Our Quality Objectives:</h4>
+                  <ul className="list-unstyled mb-0">
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-warning me-2" style={{ color: '#f57c00' }}></i> 100% On-Time Project Delivery</li>
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-warning me-2" style={{ color: '#f57c00' }}></i> Zero-Defect Precision Manufacturing</li>
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-warning me-2" style={{ color: '#f57c00' }}></i> 100% Raw Material Traceability & Test Certificates</li>
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-warning me-2" style={{ color: '#f57c00' }}></i> Radiography, Ultrasonic & Pressure Testing</li>
+                  </ul>
+                </Card.Body>
+                <Card.Footer className="border-0 p-4" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+                  <div className="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <div>
+                      <span className="fw-bold d-block text-white">Have blueprinted specs ready?</span>
+                      <small className="text-white-50">Direct email for engineering review</small>
+                    </div>
+                    <a href="mailto:naveenautocomponents@gmail.com" className="btn btn-warning btn-sm fw-bold px-3 py-2" style={{ backgroundColor: '#f57c00', borderColor: '#f57c00', color: '#fff' }}>
+                      Email Drawings
+                    </a>
+                  </div>
+                </Card.Footer>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Slogan & Motto Section */}
+      <section className="py-5 text-white" style={{ background: 'linear-gradient(135deg, #071322 0%, #0b1e36 100%)' }} data-aos="fade-up">
+        <Container>
+          <div className="text-center mb-5">
+            <div className="d-inline-block px-4 py-2 rounded-3 mb-3" style={{ background: 'linear-gradient(90deg, #f57c00 0%, #ff9800 100%)', color: '#fff' }}>
+              <h2 className="fw-extrabold mb-0 text-white text-uppercase" style={{ letterSpacing: '3px', fontSize: '1.75rem' }}>
+                WE FABRICATE , WE BUILD , WE DELIVER
+              </h2>
+            </div>
+            <p className="lead text-white-50 max-w-700 mx-auto">
+              Our core manufacturing commitment driving quality heavy engineering across Chennai & Cuddalore units.
+            </p>
+          </div>
+
+          <Row className="g-4">
+            <Col lg={4} md={6}>
+              <div className="p-4 rounded-4 bg-dark text-white border border-secondary h-100" style={{ backgroundColor: 'rgba(255,255,255,0.05)', borderColor: 'rgba(255,255,255,0.15)' }}>
+                <div className="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style={{ width: '56px', height: '56px', backgroundColor: '#f57c00' }}>
+                  <i className="bi bi-gear-wide-connected fs-3 text-white"></i>
+                </div>
+                <h3 className="h5 fw-bold text-white mb-2">We Fabricate</h3>
+                <p className="small text-white-50 mb-0" style={{ lineHeight: '1.7' }}>
+                  6kW CNC Fiber Laser Cutting, 16mm plate rolling, and 3m hydraulic press brake forming with ISO 9001:2015 precision quality control.
+                </p>
+              </div>
+            </Col>
+
+            <Col lg={4} md={6}>
+              <div className="p-4 rounded-4 bg-dark text-white border border-secondary h-100" style={{ backgroundColor: 'rgba(255,255,255,0.05)', borderColor: 'rgba(255,255,255,0.15)' }}>
+                <div className="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style={{ width: '56px', height: '56px', backgroundColor: '#f57c00' }}>
+                  <i className="bi bi-building-fill-gear fs-3 text-white"></i>
+                </div>
+                <h3 className="h5 fw-bold text-white mb-2">We Build</h3>
+                <p className="small text-white-50 mb-0" style={{ lineHeight: '1.7' }}>
+                  High-capacity storage tanks, steam distribution pipeline ducts, PEB structural steelwork, pressure vessels & rail coach components.
+                </p>
+              </div>
+            </Col>
+
+            <Col lg={4} md={12}>
+              <div className="p-4 rounded-4 bg-dark text-white border border-secondary h-100" style={{ backgroundColor: 'rgba(255,255,255,0.05)', borderColor: 'rgba(255,255,255,0.15)' }}>
+                <div className="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style={{ width: '56px', height: '56px', backgroundColor: '#f57c00' }}>
+                  <i className="bi bi-truck-flatbed fs-3 text-white"></i>
+                </div>
+                <h3 className="h5 fw-bold text-white mb-2">We Deliver</h3>
+                <p className="small text-white-50 mb-0" style={{ lineHeight: '1.7' }}>
+                  10 MT EOT crane maneuvering, 22,500 sq.ft open staging yards, and 100% on-time dispatch logistics across India.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
       {/* Capabilities Overview Section */}
       <section className="py-5 bg-light">
         <Container className="py-lg-5">
@@ -162,14 +278,14 @@ export const Home = () => {
       <section className="py-5 bg-white" data-aos="fade-up" data-aos-duration="1000">
         <Container>
           <div className="text-center mb-5">
-            <h2 className="display-6 fw-bold text-navy mb-3">Our Clients: Airflow, C.Doctor, IRG Fabrication</h2>
+            <h2 className="display-6 fw-bold text-navy mb-3">Key Customers & Institutional Partners</h2>
             <p className="text-secondary lead max-w-800 mx-auto">
-              Trusted heavy engineering fabrication partner for industrial market leaders including <strong>AIRFLOW</strong>, <strong>C.DOCTOR</strong>, <strong>IRG FABRICATION</strong>, <strong>ENEXIO POWER COOLING</strong>, and <strong>ENVIRO ENGINEERING</strong>.
+              Trusted heavy engineering fabrication partner for industrial market leaders including <strong>AIRFLOW</strong>, <strong>C.DOCTOR</strong>, <strong>ENEXIO POWER COOLING</strong>, <strong>ON LOAD GEARS</strong>, and <strong>NADI INDUSTRIAL FANS</strong>.
             </p>
             <div className="mx-auto bg-warning mt-2" style={{ width: '60px', height: '3px', backgroundColor: '#f57c00' }}></div>
           </div>
           
-          <Row className="justify-content-center align-items-center g-4 row-cols-2 row-cols-md-3 row-cols-lg-7">
+          <Row className="justify-content-center align-items-center g-4 row-cols-2 row-cols-md-3 row-cols-lg-6">
             {clientLogos.map((client, idx) => (
               <Col key={idx} className="text-center" data-aos="zoom-in" data-aos-delay={idx * 100}>
                 <div className="p-3 border border-light rounded-3 bg-white shadow-sm h-100 d-flex align-items-center justify-content-center" style={{ minHeight: '120px' }}>
