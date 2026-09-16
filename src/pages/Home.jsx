@@ -23,8 +23,7 @@ export const Home = () => {
     { name: "On Load Gears (OLG)", logo: "/images/logos/on-load-gears-client-logo-nac.webp" },
     { name: "NADI Industrial Fans", logo: "/images/logos/nadi-fans-client-logo-nac.webp" },
     { name: "Airflow", logo: "/images/logos/airflow-client-logo-nac.webp" },
-    { name: "Ability Enterprises", logo: "/images/logos/ability-enterprises-client-logo-nac.webp" },
-    { name: "IRG Fabrication", logo: "/images/logos/irg-fabrication-client-logo-nac.webp" }
+    { name: "Ability Enterprises", logo: "/images/logos/ability-enterprises-client-logo-nac.webp" }
   ];
 
   return (
