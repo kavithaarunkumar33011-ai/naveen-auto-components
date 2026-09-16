@@ -77,14 +77,29 @@ export const HeroCarousel = () => {
             width: 100%;
             height: 100%;
             opacity: 0;
-            transition: opacity 0.8s ease-in-out;
-            background-size: cover;
-            background-position: center;
+            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 0;
           }
           .carousel-slide.active {
             opacity: 1;
             z-index: 1;
+          }
+          @keyframes carouselKenBurns {
+            0% { transform: scale(1.0) translate(0, 0); }
+            50% { transform: scale(1.10) translate(-0.8%, -0.5%); }
+            100% { transform: scale(1.05) translate(0.5%, 0.8%); }
+          }
+          .carousel-bg-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+          }
+          .carousel-slide.active .carousel-bg-image {
+            animation: carouselKenBurns 8s ease-in-out infinite alternate;
           }
           .carousel-slide::before {
             content: "";
@@ -115,29 +130,54 @@ export const HeroCarousel = () => {
             margin-bottom: 25px;
             line-height: 1.5;
           }
+          @keyframes fadeInUpText {
+            from {
+              opacity: 0;
+              transform: translateY(30px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .carousel-slide.active .anim-title {
+            animation: fadeInUpText 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+            animation-delay: 0.15s;
+          }
+          .carousel-slide.active .anim-sub {
+            animation: fadeInUpText 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+            animation-delay: 0.35s;
+          }
+          .carousel-slide.active .anim-btn {
+            animation: fadeInUpText 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+            animation-delay: 0.55s;
+          }
+
           .carousel-dots {
             position: absolute;
             bottom: 30px;
             left: 80px;
             z-index: 3;
             display: flex;
+            align-items: center;
             gap: 10px;
           }
           .carousel-dot {
-            width: 14px;
-            height: 14px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.4);
             border: 2px solid rgba(255, 255, 255, 0.7);
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             padding: 0;
           }
           .carousel-dot.active {
+            width: 34px;
+            border-radius: 20px;
             background-color: #f57c00;
             border-color: #ffffff;
-            transform: scale(1.25);
-            box-shadow: 0 0 10px rgba(245, 124, 0, 0.9);
+            box-shadow: 0 0 12px rgba(245, 124, 0, 0.9);
           }
 
           @media (max-width: 768px) {
@@ -173,19 +213,28 @@ export const HeroCarousel = () => {
             <div
               key={index}
               className={`carousel-slide ${isActive ? 'active' : ''}`}
-              style={{ backgroundImage: `url(${slide.img})` }}
               role="img"
               aria-label={`${slide.h1} - Naveen Auto Components Chennai Cuddalore`}
             >
+              {/* Animated Motion Background Image */}
+              <div
+                className="carousel-bg-image"
+                style={{ backgroundImage: `url(${slide.img})` }}
+              ></div>
+
               {isActive && (
                 <div className="carousel-text">
-                  {index === 0 ? (
-                    <h1>{slide.h1}</h1>
-                  ) : (
-                    <h2>{slide.h1}</h2>
-                  )}
-                  <p>{slide.p}</p>
-                  <div className="d-flex flex-wrap gap-3">
+                  <div className="anim-title">
+                    {index === 0 ? (
+                      <h1>{slide.h1}</h1>
+                    ) : (
+                      <h2>{slide.h1}</h2>
+                    )}
+                  </div>
+                  <div className="anim-sub">
+                    <p>{slide.p}</p>
+                  </div>
+                  <div className="anim-btn d-flex flex-wrap gap-3">
                     <Button
                       as={Link}
                       to="/contact"
