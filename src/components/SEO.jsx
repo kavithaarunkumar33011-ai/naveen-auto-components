@@ -10,43 +10,55 @@ export const SEO = ({ title, description, canonical, schema, image }) => {
     description ||
     'ISO 9001:2015 certified heavy engineering fabrication company in Chennai & Cuddalore. Storage tanks, steam pipeline ducts, PEB structural fabrication, rail/bus coach parts, and air blowers.';
   const currentCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
-  const metaImage = image ? (image.startsWith('http') ? image : `${siteUrl}${image}`) : `${siteUrl}/images/logos/logo-white-cropped.jpeg`;
+  const metaImage = image ? (image.startsWith('http') ? image : `${siteUrl}${image}`) : `${siteUrl}/images/logos/nac-logo-white-chennai.webp`;
 
-  // Global Organization / LocalBusiness Schema
+  // Global Organization / LocalBusiness + Manufacturer Schema
   const defaultOrgSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Naveen Auto Components",
-    "image": `${siteUrl}/images/logos/logo-white-cropped.jpeg`,
-    "url": "https://www.naveenauto.com",
+    "@type": ["LocalBusiness", "Manufacturer"],
+    "name": "Naveen Auto Components (NAC)",
+    "legalName": "Naveen Auto Components",
+    "alternateName": "NAC",
+    "image": `${siteUrl}/images/logos/nac-logo-white-chennai.webp`,
+    "url": "https://naveenautocomponents.com/",
     "telephone": "+91-44-26360415",
     "email": "naveenauto2017@gmail.com",
     "priceRange": "$$$",
-    "description": "One-stop manufacturing company for Ferrous and Non-Ferrous metal fabrication, industrial process equipment, PEB structural fabrication, industrial pipeline ducts, and storage tanks.",
-    "address": [
+    "description": "One-Stop Manufacturing Industry for Ferrous and Non-Ferrous Metal Fabrication. Specializing in Storage Tanks, Steam Distribution Ducts, Header Pipelines, PEB Structural Fabrication, Rail & Bus Coach Components, Air Ducts & Material Handling Bins. ISO 9001:2015 Certified.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No-2c/5, SP-64, 3rd Main Road, Ambattur Ind Estate",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600058",
+      "addressCountry": "IN"
+    },
+    "department": [
       {
-        "@type": "PostalAddress",
-        "streetAddress": "No. 2C/5, SP-64, 3rd Main Road, Ambattur Industrial Estate",
-        "addressLocality": "Chennai",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "600058",
-        "addressCountry": "IN"
+        "@type": ["LocalBusiness", "Manufacturer"],
+        "name": "Naveen Auto Components - Factory 1 (Chennai Unit)",
+        "description": "High-speed CNC Laser cutting, Press Brake, Shearing, Rolling & Closed Shed with 10 MT EOT Crane",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No-T93, Sidco Women Industrial Park, Kattur, Thirumullaivoyal",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "600062",
+          "addressCountry": "IN"
+        }
       },
       {
-        "@type": "PostalAddress",
-        "streetAddress": "No. T93, SIDCO Women's Industrial Park, Thirumullaivoyal",
-        "addressLocality": "Tiruvallur District",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "600062",
-        "addressCountry": "IN"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "No. 94/2D, Cuddalore-Chidambaram Road (NH-32), Kotthattai Village",
-        "addressLocality": "Chidambaram",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "608501",
-        "addressCountry": "IN"
+        "@type": ["LocalBusiness", "Manufacturer"],
+        "name": "Naveen Auto Components - Factory 2 (Cuddalore Unit - 2.5 Acres)",
+        "description": "2.5 Acres Heavy Structural & Large Diameter Pipe Rolling Facility with Expansive Open Yard",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No-94/2D, Cuddalore-Chidambaram Road, NH-32, Kotthattai Village",
+          "addressLocality": "Chidambaram",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "608501",
+          "addressCountry": "IN"
+        }
       }
     ],
     "geo": {

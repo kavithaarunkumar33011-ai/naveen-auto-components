@@ -142,7 +142,7 @@ export const MainNavbar = () => {
           {/* Brand Logo Tab */}
           <Link to="/" className="logo-tab" onClick={() => setExpanded(false)}>
             <img 
-              src="/images/logos/logo-white-cropped.jpeg" 
+              src="/images/logos/nac-logo-white-chennai.webp" 
               alt="Naveen Auto Components"
               style={{ height: '70px', objectFit: 'contain' }}
             />

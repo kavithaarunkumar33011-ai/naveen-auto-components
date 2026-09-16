@@ -44,7 +44,7 @@ export const projectsData = [
     location: "Chennai Unit 1 (EOT Crane Shed)",
     description: "Large red primer painted horizontal storage tank featuring dual manhole access flanges for power cooling circuits.",
     imageTag: "consent_state_tank",
-    imageSrc: "/images/hd/services/storage-tank.jpeg",
+    imageSrc: "/images/hd/services/storage-tank-water-condensate-fabrication-cuddalore-nac-22.webp",
     highlights: ["Dual Manhole Flanges", "Red Primer Protective Coat", "EOT Crane Handling"]
   },
   {
@@ -56,7 +56,7 @@ export const projectsData = [
     location: "Chennai Unit 1",
     description: "Vertical steam flash tank manufacturing with internal baffle plates and heavy side inlet connections.",
     imageTag: "flash_tank",
-    imageSrc: "/images/hd/Industrial Air Duct & Air Blower Fabrication.jpeg",
+    imageSrc: "/images/hd/air-duct-fabrication-airflow-client-nac-07.webp",
     highlights: ["Thermal Stress Relief", "Baffle Plate Fitment", "Hydrostatic Tested"]
   },
   {
@@ -68,7 +68,7 @@ export const projectsData = [
     location: "Chennai / Cuddalore Plants",
     description: "Multiple silver painted large diameter header pipe assemblies with end caps and branch ports.",
     imageTag: "header_pipe",
-    imageSrc: "/images/hd/services/header-pipe-power-cooling-14.jpeg",
+    imageSrc: "/images/hd/services/header-pipeline-fabrication-enexio-client-nac-33.webp",
     highlights: ["Silver Protective Paint", "Large Diameter Pipe Rolling", "Flanged Outlets"]
   },
   {
@@ -104,7 +104,7 @@ export const projectsData = [
     location: "Chennai Unit 1",
     description: "Centrifugal blower casing volute fabrication with dynamic balancing mountings for industrial air systems.",
     imageTag: "air_blower_product",
-    imageSrc: "/images/hd/services/air-blower-products-spec.jpeg",
+    imageSrc: "/images/hd/services/air-blower-fabrication-airflow-client-nac-29.webp",
     highlights: ["Volute Casing Fitting", "Vibration Dampened Base", "High Static Pressure"]
   },
   {
@@ -116,7 +116,7 @@ export const projectsData = [
     location: "Chennai & Cuddalore Units",
     description: "Large volume batch production of circular and rectangular air ducting shells with flanged joints.",
     imageTag: "air_duct_units",
-    imageSrc: "/images/hd/Heavy Duty Duct Shell & Cylinder Rolling Facility with Press Brake.jpeg",
+    imageSrc: "/images/hd/steam-pipeline-duct-fabrication-cuddalore-nac-09.webp",
     highlights: ["High Volume Batch Production", "Primer Coated Exterior", "Flanged Joint Specs"]
   },
   {
@@ -152,7 +152,7 @@ export const projectsData = [
     location: "Cuddalore Unit 2 (2.5 Acres)",
     description: "Long built-up steel H-beams with end plate gussets stacked in yard and handled via mobile crane.",
     imageTag: "structural_beam",
-    imageSrc: "/images/hd/Rail & Bus Coach Component Fabrication.jpeg",
+    imageSrc: "/images/hd/rail-coach-parts-fabrication-nac-06.webp",
     highlights: ["Built-Up H-Beams", "End Plate Connection Gussets", "Crane Rigging Staging"]
   },
   {
@@ -176,7 +176,7 @@ export const projectsData = [
     location: "Chennai Unit 1 Shed",
     description: "Specialized heavy gauge heat handling bin fabrication with thermal expansion ribs and reinforced steel mounting frames.",
     imageTag: "heat_handling_bin",
-    imageSrc: "/images/hd/services/heat-handling-bin.jpeg",
+    imageSrc: "/images/hd/services/heat-treatment-bins-fabrication-nac-31.webp",
     highlights: ["Thermal Expansion Ribs", "Heavy Gauge Metalwork", "Certified Weld Inspection"]
   },
   {
@@ -188,7 +188,7 @@ export const projectsData = [
     location: "Cuddalore Unit 2 (2.5 Acres)",
     description: "Heavy industrial material handling bin and storage hopper sub-assembly designed for high-capacity bulk material dispatch.",
     imageTag: "material_handling_bin",
-    imageSrc: "/images/hd/services/material-handling-bin.jpeg",
+    imageSrc: "/images/hd/services/material-handling-bins-fabrication-nac-30.webp",
     highlights: ["High-Capacity Bulk Storage", "Reinforced Hopper Ribs", "EOT Crane Maneuvered"]
   },
   {

@@ -28,7 +28,7 @@ export const BlogPost = () => {
       "name": "Naveen Auto Components",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.naveenauto.com/images/logos/logo-white-cropped.jpeg"
+        "url": "https://www.naveenauto.com/images/logos/nac-logo-white-chennai.webp"
       }
     },
     "datePublished": "2026-08-28"

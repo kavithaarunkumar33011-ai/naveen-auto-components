@@ -17,17 +17,17 @@ export const Contact = () => {
   return (
     <>
       <SEO 
-        title="Contact Us | Heavy Fabrication Plants in Chennai and Cuddalore | NAC"
-        description="Contact Naveen Auto Components for Heavy Fabrication in Chennai and Cuddalore. Request RFQs for metal fabrication, storage tanks, and PEB structural blueprints."
+        title="Contact Naveen Auto Components - Chennai & Cuddalore Fabrication Units"
+        description="Contact Naveen Auto Components (NAC) for heavy engineering inquiries. Administrative office in Ambattur, Chennai with manufacturing units in Kattur & Cuddalore."
         canonical="/contact"
         schema={contactSchema}
       />
 
       <PageBanner 
-        title="Get in Touch" 
-        subtitle="Request RFQ proposals for Heavy Fabrication in Chennai and Cuddalore."
+        title="Contact Naveen Auto Components - Chennai & Cuddalore Fabrication Units" 
+        subtitle="ISO 9001:2015 Certified Heavy Fabrication Company with 2 Manufacturing Units."
         breadcrumbs={[{ label: 'Contact Us', url: '/contact' }]}
-        image="/images/hd/contact.jpg"
+        image="/images/hd/contact-nac-heavy-fabrication-chennai-cuddalore.webp"
       />
 
       {/* Quick Contact Header Cards */}

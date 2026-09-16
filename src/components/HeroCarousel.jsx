@@ -7,7 +7,7 @@ export const HeroCarousel = () => {
     {
       id: 1,
       video: '/videos/placeholder-1.mp4',
-      imageFallback: '/images/hd/hero_slide_1.jpg',
+      imageFallback: '/images/hd/storage-tank-water-condensate-fabrication-chennai-nac-01.webp',
       tagline: "Heavy Engineering Excellence",
       title: "Ferrous & Non-Ferrous Metal Fabrication",
       highlight: "For Industrial Process Equipments",
@@ -16,7 +16,7 @@ export const HeroCarousel = () => {
     {
       id: 2,
       video: '/videos/placeholder-2.mp4',
-      imageFallback: '/images/hd/industrial-2.jpg',
+      imageFallback: '/images/hd/steam-pipeline-duct-fabrication-cuddalore-nac-03.webp',
       tagline: "Infrastructure & Piping",
       title: "PEB Structural Fabrication & Pipeline Ducts",
       highlight: "Heavy-Duty Industrial Frameworks",
@@ -25,7 +25,7 @@ export const HeroCarousel = () => {
     {
       id: 3,
       video: '/videos/placeholder-3.mp4',
-      imageFallback: '/images/hd/industrial-3.jpg',
+      imageFallback: '/images/hd/peb-structural-fabrication-nac-chennai-04.webp',
       tagline: "Turnkey Manufacturing",
       title: "Industrial Storage Tanks & Custom Equipment",
       highlight: "Delivering Fully Finished Products",
@@ -89,8 +89,8 @@ export const HeroCarousel = () => {
                   </h3>
                   {slide.id === 1 ? (
                     <h1 className="display-4 fw-extrabold text-white mb-3 lh-sm" style={{ textShadow: '0 4px 16px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.85)' }}>
-                      {slide.title} <br />
-                      <span className="fw-extrabold" style={{ color: '#ffc107', textShadow: '0 4px 16px rgba(0,0,0,0.95), 0 0 20px rgba(245,124,0,0.5)' }}>{slide.highlight}</span>
+                      Heavy Engineering and Processing Equipment Fabrication <br />
+                      <span className="fw-extrabold" style={{ color: '#ffc107', textShadow: '0 4px 16px rgba(0,0,0,0.95), 0 0 20px rgba(245,124,0,0.5)' }}>in Chennai & Cuddalore</span>
                     </h1>
                   ) : (
                     <h2 className="display-4 fw-extrabold text-white mb-3 lh-sm" style={{ textShadow: '0 4px 16px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.85)' }}>

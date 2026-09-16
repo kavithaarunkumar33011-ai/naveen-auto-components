@@ -27,7 +27,7 @@ export const BlogHub = () => {
         title="News & Events" 
         subtitle="Technical insights on Heavy Fabrication in Chennai and Cuddalore."
         breadcrumbs={[{ label: 'News & Events', url: '/blog' }]}
-        image="/images/hd/events.jpg"
+        image="/images/hd/engineering-events-nac-chennai-cuddalore.webp"
       />
 
       <section className="py-5 bg-light">

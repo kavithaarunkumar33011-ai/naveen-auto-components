@@ -47,17 +47,17 @@ export const About = () => {
   return (
     <>
       <SEO 
-        title="About Us | Heavy Fabrication in Chennai and Cuddalore | Naveen Auto Components"
-        description="Discover Naveen Auto Components — leaders in Heavy Fabrication in Chennai and Cuddalore. ISO 9001:2015 certified engineering company with dual manufacturing facilities."
+        title="About NAC - 2 Unit Heavy Engineering Fabrication Company in Tamil Nadu"
+        description="Learn about Naveen Auto Components (NAC), an ISO 9001:2015 certified 2-unit heavy engineering fabrication company in Chennai & Cuddalore, Tamil Nadu."
         canonical="/about"
         schema={aboutSchema}
       />
 
       <PageBanner 
-        title="About Our Company" 
-        subtitle="Pioneering Heavy Fabrication in Chennai and Cuddalore since 2000."
+        title="One-Stop Manufacturing Industry for Ferrous and Non-Ferrous Metal Fabrication - ISO 9001:2015" 
+        subtitle="2 Unit Heavy Engineering Fabrication Company in Chennai & Cuddalore, Tamil Nadu."
         breadcrumbs={[{ label: 'About Us', url: '/about' }]}
-        image="/images/hd/factories/office_ambattur.jpg"
+        image="/images/factories/nac-office-ambattur-chennai-50.webp"
       />
 
       {/* Main About Content */}
@@ -66,11 +66,11 @@ export const About = () => {
           <Row className="g-5 align-items-start">
             <Col lg={7} data-aos="fade-right" data-aos-duration="1000">
               <Badge bg="warning" className="text-navy fw-bold px-3 py-2 text-uppercase mb-3" style={{ backgroundColor: '#f57c00' }}>
-                Precision Engineering Since 2000
+                ISO 9001:2015 Certified 2-Unit Manufacturing Company
               </Badge>
-              <h1 className="h2 fw-bold text-navy mb-3">
-                About Us – Varsha Technologies & Naveen Auto Components
-              </h1>
+              <h2 className="h2 fw-bold text-navy mb-3">
+                Varsha Technologies & Naveen Auto Components (NAC)
+              </h2>
               <h3 className="h6 fw-semibold text-warning text-uppercase tracking-wide mb-4" style={{ color: '#f57c00' }}>
                 Leading Manufacturing Company in Chennai & Cuddalore | Precision Engineering Since 2000
               </h3>
@@ -250,7 +250,7 @@ export const About = () => {
           <Row className="g-3 align-items-center justify-content-center" data-aos="fade-up">
             {[
               { title: "Power & Energy", img: "/images/hd/industries/power.jpg", height: 400 },
-              { title: "Process Engineering", img: "/images/hd/industrial-2.jpg", height: 350 },
+              { title: "Process Engineering", img: "/images/hd/steam-pipeline-duct-fabrication-cuddalore-nac-03.webp", height: 350 },
               { title: "Industrial Facilities", img: "/images/hd/industries/facilities.jpg", height: 450 },
               { title: "Heavy Duty Frameworks", img: "/images/hd/industries/frameworks.jpg", height: 350 },
               { title: "Rail & Transport", img: "/images/hd/industries/transport.jpg", height: 400 }

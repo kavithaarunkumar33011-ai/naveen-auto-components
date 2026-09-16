@@ -42,7 +42,7 @@ export const Projects = () => {
         title="Completed Projects" 
         subtitle="Portfolio of Heavy Fabrication in Chennai and Cuddalore."
         breadcrumbs={[{ label: 'Projects', url: '/projects' }]}
-        image="/images/hd/projects.jpg"
+        image="/images/hd/heavy-fabrication-projects-nac-chennai-cuddalore.webp"
       />
 
       {/* Filterable Project Gallery */}

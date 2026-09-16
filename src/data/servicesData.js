@@ -1,12 +1,12 @@
 export const servicesData = [
   {
     slug: "storage-tanks",
-    title: "Storage Tank Fabrication",
+    title: "Storage Tank for Water & Condensate",
     shortDesc: "Custom manufacturing of water, condensate, consent-state, and flash tanks engineered for high-pressure process industries.",
     icon: "bi-square-fill",
-    seoTitle: "Storage Tank Heavy Fabrication in Chennai and Cuddalore | NAC",
-    seoDesc: "Specialized storage tank Heavy Fabrication in Chennai and Cuddalore. ISO 9001:2015 certified manufacturer of water, condensate, consent-state & flash pressure vessels.",
-    fullDescription: "Naveen Auto Components provides high-precision industrial storage tank Heavy Fabrication in Chennai and Cuddalore for power plants, chemical units, and process industries across South India. Utilizing advanced rolling machines (up to 16mm plate thickness) and certified MIG/TIG welding setups, we build robust Ferrous and Non-Ferrous storage vessels engineered to withstand extreme pressures, temperatures, and chemical exposure.",
+    seoTitle: "Storage Tank for Water & Condensate Fabrication | NAC",
+    seoDesc: "Specialized Storage Tank for Water & Condensate Heavy Fabrication in Chennai and Cuddalore. ISO 9001:2015 certified manufacturer.",
+    fullDescription: "Naveen Auto Components provides high-precision industrial Storage Tank for Water & Condensate Heavy Fabrication in Chennai and Cuddalore for power plants, chemical units, and process industries across South India. Utilizing advanced rolling machines (up to 16mm plate thickness) and certified MIG/TIG welding setups, we build robust Ferrous and Non-Ferrous storage vessels engineered to withstand extreme pressures, temperatures, and chemical exposure.",
     capabilities: [
       "Water & Condensate Storage Tanks",
       "Consent-State Industrial Tanks with Nozzle Fit-ups",
@@ -29,12 +29,12 @@ export const servicesData = [
   },
   {
     slug: "pipeline-ducts",
-    title: "Steam Distribution Pipeline Duct & Header Pipeline",
+    title: "Steam Distribution Pipeline Duct",
     shortDesc: "Heavy-duty steam distribution ducts, header pipelines, and bracing stands built for high-temperature fluid handling.",
     icon: "bi-diagram-3",
-    seoTitle: "Steam Pipeline Duct Heavy Fabrication in Chennai and Cuddalore",
-    seoDesc: "Premier steam pipeline duct & header pipeline Heavy Fabrication in Chennai and Cuddalore. Built for high-temperature fluid handling with grit blasting & painting.",
-    fullDescription: "Industrial power plants and manufacturing units depend on seamless steam distribution. Naveen Auto Components offers expert Heavy Fabrication in Chennai and Cuddalore for heavy-duty steam distribution pipeline ducts, main header pipelines, and pipe bracing stands. With full in-house shot blasting, spray painting, and precision alignment facilities, our products ensure minimal thermal loss and long operational lifespans under continuous steam pressures.",
+    seoTitle: "Steam Distribution Pipeline Duct Heavy Fabrication in Chennai & Cuddalore",
+    seoDesc: "Premier Steam Distribution Pipeline Duct & Header Pipeline Heavy Fabrication in Chennai and Cuddalore. Built for high-temperature fluid handling.",
+    fullDescription: "Industrial power plants and manufacturing units depend on seamless steam distribution. Naveen Auto Components offers expert Heavy Fabrication in Chennai and Cuddalore for heavy-duty Steam Distribution Pipeline Ducts, main header pipelines, and pipe bracing stands. With full in-house shot blasting, spray painting, and precision alignment facilities, our products ensure minimal thermal loss and long operational lifespans under continuous steam pressures.",
     capabilities: [
       "High-Pressure Header Pipeline Fabrication",
       "Steam Distribution Ducting & Expansion Joints",
@@ -85,8 +85,8 @@ export const servicesData = [
     gallery: [
       {
         id: "peb-structural-building",
-        src: "/images/hd/services/peb-structural-building.jpeg",
-        alt: "PEB Structural Fabrication - Industrial Building Framework Spec 1",
+        src: "/images/hd/services/peb-structural-building-fabrication-nac-26.webp",
+        alt: "PEB Structural Fabrication in Chennai Cuddalore - Naveen Auto Components",
         title: "PEB Structural Building - Spec 1",
         desc: "Heavy structural steel member fabrication for Pre-Engineered Buildings."
       },
@@ -108,12 +108,12 @@ export const servicesData = [
   },
   {
     slug: "rail-bus-coach",
-    title: "Rail & Bus Coach Component Fabrication",
+    title: "Rail and Bus Coach Components",
     shortDesc: "Precision sheet metal folding, forming, and structural parts for Indian railways and automotive coach builders.",
     icon: "bi-train-front",
-    seoTitle: "Rail & Bus Coach Heavy Fabrication in Chennai and Cuddalore",
-    seoDesc: "Precision rail coach parts folding & bus body component Heavy Fabrication in Chennai and Cuddalore. CNC laser cutting & press brake metal forming per railway standards.",
-    fullDescription: "Transportation infrastructure requires tight tolerances, repeatable precision, and high-strength metal components. Naveen Auto Components specializes in rail & bus coach Heavy Fabrication in Chennai and Cuddalore, producing specialized rail coach parts, passenger bus body structural sub-assemblies, and folded sheet metal brackets. Our 8m x 3.2m CNC Press Brake and 6kW Laser Cutter enable rapid production runs with zero tolerance drift.",
+    seoTitle: "Rail and Bus Coach Components Heavy Fabrication in Chennai & Cuddalore",
+    seoDesc: "Precision Rail and Bus Coach Components Heavy Fabrication in Chennai and Cuddalore. CNC laser cutting & press brake metal forming per railway standards.",
+    fullDescription: "Transportation infrastructure requires tight tolerances, repeatable precision, and high-strength metal components. Naveen Auto Components specializes in Rail and Bus Coach Components Heavy Fabrication in Chennai and Cuddalore, producing specialized rail coach parts, passenger bus body structural sub-assemblies, and folded sheet metal brackets. Our 8m x 3.2m CNC Press Brake and 6kW Laser Cutter enable rapid production runs with zero tolerance drift.",
     capabilities: [
       "Rail Coach Sheet Metal Parts Folding & Bending",
       "Bus Body Frame & Structural Member Fabrication",
@@ -135,28 +135,28 @@ export const servicesData = [
       {
         id: "rail-bus-coach-component_1",
         src: "/images/hd/services/rail-bus-coach-component_1.jpeg",
-        alt: "Rail & Bus Coach Component Fabrication - Shop Floor Spec 1",
+        alt: "Rail and Bus Coach Components Fabrication in Chennai Cuddalore - Naveen Auto Components",
         title: "Rail & Bus Coach Component Spec 1",
         desc: "High-precision folded structural components for railway and automotive coaches."
       },
       {
         id: "rail-bus-coach-component_2",
         src: "/images/hd/services/rail-bus-coach-component_2.jpeg",
-        alt: "Rail & Bus Coach Component Fabrication - Shop Floor Spec 2",
+        alt: "Rail and Bus Coach Components Fabrication - Shop Floor Spec 2",
         title: "Rail & Bus Coach Component Spec 2",
         desc: "Heavy-gauge sheet metal body framework sub-assemblies."
       },
       {
         id: "rail-bus-coach-component_3",
         src: "/images/hd/services/rail-bus-coach-component_3.jpeg",
-        alt: "Rail & Bus Coach Component Fabrication - Shop Floor Spec 3",
+        alt: "Rail and Bus Coach Components Fabrication - Shop Floor Spec 3",
         title: "Rail & Bus Coach Component Spec 3",
         desc: "CNC Laser profiling and multi-stage press brake channel brackets."
       },
       {
         id: "rail-bus-coach-component_4",
         src: "/images/hd/services/rail-bus-coach-component_4.jpeg",
-        alt: "Rail & Bus Coach Component Fabrication - Shop Floor Spec 4",
+        alt: "Rail and Bus Coach Components Fabrication - Shop Floor Spec 4",
         title: "Rail & Bus Coach Component Spec 4",
         desc: "ISO 9001:2015 quality inspected passenger transport structural parts."
       }
@@ -164,12 +164,12 @@ export const servicesData = [
   },
   {
     slug: "air-duct-blower",
-    title: "Industrial Air Duct & Air Blower Fabrication",
+    title: "Air Blower & Air Duct Fabrication",
     shortDesc: "High-volume air ducting systems, centrifugal blower housings, and ventilation ductwork for plant HVAC.",
     icon: "bi-fan",
-    seoTitle: "Industrial Air Duct & Blower Heavy Fabrication in Chennai and Cuddalore",
-    seoDesc: "High-capacity industrial air duct & centrifugal blower housing Heavy Fabrication in Chennai and Cuddalore. OEM partner for Airflow & NADI Industrial Fans.",
-    fullDescription: "Proper ventilation and gas handling are essential to industrial plant safety. We deliver industrial air duct & blower Heavy Fabrication in Chennai and Cuddalore, manufacturing heavy-duty industrial air ducts, transition pieces, and air blower housings for air handling unit (AHU) original equipment manufacturers. Working alongside industry leaders like Airflow and NADI Industrial Fans, our ductwork resists dynamic vibration and corrosive airflow.",
+    seoTitle: "Air Blower & Air Duct Heavy Fabrication in Chennai and Cuddalore",
+    seoDesc: "High-capacity Air Blower & Air Duct Heavy Fabrication in Chennai and Cuddalore. OEM partner for Airflow & NADI Industrial Fans.",
+    fullDescription: "Proper ventilation and gas handling are essential to industrial plant safety. We deliver Air Blower & Air Duct Heavy Fabrication in Chennai and Cuddalore, manufacturing heavy-duty industrial air ducts, transition pieces, and air blower housings for air handling unit (AHU) original equipment manufacturers. Working alongside industry leaders like Airflow and NADI Industrial Fans, our ductwork resists dynamic vibration and corrosive airflow.",
     capabilities: [
       "Heavy Industrial Air Ducting & Elbow Transitions",
       "Centrifugal Blower Housings & Volutes",
@@ -190,19 +190,19 @@ export const servicesData = [
   },
   {
     slug: "heavy-handling-logistics",
-    title: "Heavy Fabrication Product Handling & Logistics",
+    title: "Material Handling & Heat Treatment Bins",
     image: "/images/hd/services/heavy-fabrication-product-handling-logistics.jpeg",
-    shortDesc: "End-to-end handling of massive fabricated structures with 10 MT EOT cranes, wide yards, and transport logistics.",
+    shortDesc: "End-to-end material handling bins, heat treatment bins, heavy cranes, and transport logistics.",
     icon: "bi-truck",
-    seoTitle: "Heavy Fabrication Handling & Logistics in Chennai and Cuddalore",
-    seoDesc: "Turnkey product handling & dispatch logistics for Heavy Fabrication in Chennai and Cuddalore with 10 MT EOT cranes & 22,500 sq.ft open staging yards.",
-    fullDescription: "Fabricating heavy engineering equipment is only half the job — safely moving, storing, and loading multi-ton assemblies requires serious infrastructure. Naveen Auto Components provides full product handling for Heavy Fabrication in Chennai and Cuddalore, operating a 10,000 sq.ft closed manufacturing shed equipped with a 10 MT EOT overhead crane, paired with 22,500 sq.ft of total open yard space across Chennai and Cuddalore.",
+    seoTitle: "Material Handling & Heat Treatment Bins Heavy Fabrication in Chennai & Cuddalore",
+    seoDesc: "Turnkey Material Handling & Heat Treatment Bins Heavy Fabrication in Chennai and Cuddalore with 10 MT EOT cranes & 22,500 sq.ft open staging yards.",
+    fullDescription: "Fabricating heavy engineering equipment requires dedicated handling — safely moving, storing, and loading multi-ton assemblies requires serious infrastructure. Naveen Auto Components provides Material Handling & Heat Treatment Bins Heavy Fabrication in Chennai and Cuddalore, operating a 10,000 sq.ft closed manufacturing shed equipped with a 10 MT EOT overhead crane, paired with 22,500 sq.ft of total open yard space across Chennai and Cuddalore.",
     capabilities: [
+      "Material Handling Bins & Storage Containers",
+      "Heat Treatment Bins & High-Temp Pallets",
       "10 MT Overhead EOT Crane Rigging & Maneuvering",
       "Oversized Equipment Storage in 22,500 Sq.Ft Open Yards",
-      "Crane-Assisted Heavy Flatbed Trailer Loading",
-      "Turnkey Rigging, Fit-up, and Transport Preparation",
-      "On-Site Assembly Support & Dispatch Logistics"
+      "Crane-Assisted Heavy Flatbed Trailer Loading"
     ],
     machineryUsed: [
       "10 MT EOT Overhead Crane",
@@ -218,7 +218,7 @@ export const servicesData = [
       {
         id: "heavy-handling-logistics-spec-1",
         src: "/images/hd/services/heavy-fabrication-product-handling-logistics.jpeg",
-        alt: "Heavy Fabrication Product Handling & Logistics - Spec 1 (1.jpeg)",
+        alt: "Material Handling & Heat Treatment Bins Fabrication in Chennai Cuddalore - Naveen Auto Components",
         title: "Heavy Product Handling & Logistics Spec 1",
         desc: "Overhead EOT crane maneuvering and heavy flatbed trailer loading at Chennai facility."
       },

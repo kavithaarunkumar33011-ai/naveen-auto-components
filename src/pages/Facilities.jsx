@@ -37,7 +37,7 @@ export const Facilities = () => {
         title="Machinery & Infrastructure" 
         subtitle="State-of-the-art plants for Heavy Fabrication in Chennai and Cuddalore."
         breadcrumbs={[{ label: 'Facilities', url: '/facilities' }]}
-        image="/images/hd/infrastructure.jpg"
+        image="/images/hd/infrastructure-machinery-nac-chennai-cuddalore.webp"
       />
 
       {/* 1. Dual Manufacturing Locations Section (TOP) */}

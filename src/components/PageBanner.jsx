@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-export const PageBanner = ({ title, subtitle, breadcrumbs = [], image = '/images/hd/industrial-2.jpg' }) => {
+export const PageBanner = ({ title, subtitle, breadcrumbs = [], image = '/images/hd/steam-pipeline-duct-fabrication-cuddalore-nac-03.webp' }) => {
   return (
     <div 
       className="page-banner text-white position-relative overflow-hidden d-flex align-items-center" 

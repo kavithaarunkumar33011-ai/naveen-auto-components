@@ -18,19 +18,20 @@ export const Home = () => {
   };
 
   const clientLogos = [
-    { name: "C. Doctor & Co. Pvt. Ltd. (Doctaire)", logo: "/images/logos/doctor&co.pvt.ltd.jpeg" },
-    { name: "ENEXIO Power Cooling", logo: "/images/logos/enexio.jpg" },
-    { name: "On Load Gears (OLG)", logo: "/images/logos/on_load_gears.jpeg" },
-    { name: "NADI Industrial Fans", logo: "/images/logos/nadi_fans.jpg" },
-    { name: "Airflow", logo: "/images/logos/airflow.jpg" },
-    { name: "Ability Enterprises", logo: "/images/logos/ability_enterprises.jpeg" }
+    { name: "C. Doctor & Co. Pvt. Ltd. (Doctaire)", logo: "/images/logos/cdoctor-company-client-logo-nac.webp" },
+    { name: "ENEXIO Power Cooling", logo: "/images/logos/enexio-power-cooling-client-logo-nac.webp" },
+    { name: "On Load Gears (OLG)", logo: "/images/logos/on-load-gears-client-logo-nac.webp" },
+    { name: "NADI Industrial Fans", logo: "/images/logos/nadi-fans-client-logo-nac.webp" },
+    { name: "Airflow", logo: "/images/logos/airflow-client-logo-nac.webp" },
+    { name: "Ability Enterprises", logo: "/images/logos/ability-enterprises-client-logo-nac.webp" },
+    { name: "IRG Fabrication", logo: "/images/logos/irg-fabrication-client-logo-nac.webp" }
   ];
 
   return (
     <>
       <SEO 
-        title="Heavy Fabrication in Chennai and Cuddalore | Naveen Auto Components"
-        description="Naveen Auto Components is your premier partner for Heavy Fabrication in Chennai and Cuddalore. ISO 9001:2015 certified manufacturer of storage tanks, steam pipeline ducts, PEB structural steel, rail & bus coach components, and heavy air blowers."
+        title="Naveen Auto Components | Heavy Fabrication, Storage Tanks & PEB Structural Works in Chennai & Cuddalore"
+        description="Naveen Auto Components (NAC) - ISO 9001:2015 certified heavy fabrication company with 2 units in Chennai & Cuddalore. Specializing in Storage Tank, Steam Distribution Duct, Header Pipeline, PEB Structural Fabrication, Rail Coach Components, Air Duct & Material Handling Bins."
         canonical="/"
         schema={homeSchema}
       />
@@ -43,7 +44,7 @@ export const Home = () => {
           <Row className="text-center g-4">
             {[
               { label: "Year Established", value: "2000" },
-              { label: "Manufacturing Area", value: "350k+ Sq Ft" },
+              { label: "Manufacturing Area", value: "350k+ Sq Ft (2 Units)" },
               { label: "Installed Capacity", value: "1500+ MT/Month" },
               { label: "Quality Certification", value: "ISO 9001:2015" }
             ].map((stat, idx) => (
@@ -63,13 +64,13 @@ export const Home = () => {
         <Container className="py-lg-4">
           <div className="text-center max-w-900 mx-auto mb-5" data-aos="fade-up">
             <Badge bg="warning" className="text-navy fw-bold px-3 py-2 text-uppercase mb-3" style={{ backgroundColor: '#f57c00', color: '#fff' }}>
-              Precision Manufacturing Since 2000
+              ISO 9001:2015 Certified Precision Manufacturing
             </Badge>
             <h2 className="display-6 fw-bold text-navy mb-4">
-              Varsha Technologies & Naveen Auto Components
+              Our 2 Manufacturing Units in Chennai & Cuddalore
             </h2>
             <p className="lead text-secondary mx-auto max-w-800" style={{ fontSize: '1.15rem', lineHeight: '1.8' }}>
-              Established in 2000, <strong>Varsha Technologies</strong> is an <strong>ISO / IATF 16949:2016 certified</strong> manufacturing company in Chennai, specializing in CNC machined components, hot forging, heat treatment and shot blasting for automotive and valve industries.
+              Established in 2000, <strong>Varsha Technologies</strong> and <strong>Naveen Auto Components (NAC)</strong> operate <strong>2 manufacturing units</strong> across <strong>Chennai</strong> and <strong>Cuddalore</strong> (2.5 Acres, NH-32), delivering ISO 9001:2015 certified heavy engineering metal fabrication.
             </p>
           </div>
 
@@ -101,8 +102,8 @@ export const Home = () => {
                       <i className="bi bi-building-gear fs-4 text-warning"></i>
                     </div>
                     <div>
-                      <h3 className="h5 fw-bold text-navy mb-0">Naveen Auto Components</h3>
-                      <span className="small text-muted font-monospace">Est. 2010 • ISO 9001:2015</span>
+                      <h3 className="h5 fw-bold text-navy mb-0">Naveen Auto Components (NAC)</h3>
+                      <span className="small text-muted font-monospace">Est. 2010 • ISO 9001:2015 Certified</span>
                     </div>
                   </div>
                   <p className="small text-secondary mb-0" style={{ lineHeight: '1.7' }}>
@@ -121,141 +122,16 @@ export const Home = () => {
                     </div>
                     <div>
                       <h3 className="h5 fw-bold text-white mb-0">Dual Manufacturing Footprint</h3>
-                      <span className="small text-warning font-monospace">Chennai & Cuddalore</span>
+                      <span className="small text-warning font-monospace">2 Units: Chennai & Cuddalore</span>
                     </div>
                   </div>
                   <p className="small text-white-50 mb-0" style={{ lineHeight: '1.7' }}>
-                    Operating dual manufacturing plants in <strong>Chennai</strong> and <strong>Cuddalore (NH-32, Chidambaram Highway)</strong> equipped with advanced CNC laser cutters, 16mm plate rolling, and ISO 9001:2015 systems serving South India.
+                    Operating 2 manufacturing units in <strong>Chennai (SIDCO Kattur)</strong> and <strong>Cuddalore (2.5 Acres, NH-32)</strong> equipped with advanced CNC laser cutters, 16mm plate rolling, and ISO 9001:2015 quality management.
                   </p>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
-        </Container>
-      </section>
-
-      {/* Why Choose Us & Company Info */}
-      <section className="py-5 bg-white border-bottom border-light overflow-hidden">
-        <Container className="py-lg-5">
-          <Row className="align-items-center g-5">
-            <Col lg={6} data-aos="fade-right" data-aos-duration="1000">
-              <Badge bg="warning" className="text-dark fw-bold px-3 py-2 text-uppercase mb-3" style={{ backgroundColor: '#f57c00' }}>
-                <i className="bi bi-award-fill me-1"></i> About Us
-              </Badge>
-              <h2 className="display-6 fw-bold text-navy mb-4">
-                Delivering Excellence in Heavy Fabrication in Chennai and Cuddalore
-              </h2>
-              <p className="text-secondary mb-4" style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
-                In 2010, we expanded with <strong>Naveen Auto Components (NAC)</strong>, a leading heavy fabrication and PEB structural fabrication company in Chennai and Cuddalore. NAC is your one-stop solution for ferrous and non-ferrous metal fabrication, industrial process equipment, PEB structures, pipeline ducts, storage tanks and special-purpose equipment.
-              </p>
-              
-              <Row className="g-4 mb-4">
-                <Col sm={6}>
-                  <div className="d-flex align-items-start">
-                    <i className="bi bi-check-circle-fill text-warning fs-4 me-3" style={{ color: '#f57c00' }}></i>
-                    <div>
-                      <h5 className="h6 fw-bold text-navy mb-1">ISO 9001:2015 Quality Policy</h5>
-                      <p className="text-secondary small mb-0">Strict adherence to global quality management systems and tolerances.</p>
-                    </div>
-                  </div>
-                </Col>
-                <Col sm={6}>
-                  <div className="d-flex align-items-start">
-                    <i className="bi bi-gear-fill text-warning fs-4 me-3" style={{ color: '#f57c00' }}></i>
-                    <div>
-                      <h5 className="h6 fw-bold text-navy mb-1">Advanced CNC Fleet</h5>
-                      <p className="text-secondary small mb-0">6kW Laser cutting, 16mm plate rolling, and 3-meter hydraulic press brakes.</p>
-                    </div>
-                  </div>
-                </Col>
-                <Col sm={6}>
-                  <div className="d-flex align-items-start">
-                    <i className="bi bi-building-fill text-warning fs-4 me-3" style={{ color: '#f57c00' }}></i>
-                    <div>
-                      <h5 className="h6 fw-bold text-navy mb-1">Dual Manufacturing Footprint</h5>
-                      <p className="text-secondary small mb-0">Facilities in Chennai and Cuddalore (2.5 Acres) with 10 MT EOT Cranes.</p>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-            
-            <Col lg={6} data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-              <Card className="border-0 shadow-lg bg-navy text-white p-4" style={{ backgroundColor: '#0b1e36' }}>
-                <Card.Body>
-                  <IndustrialGraphic type="mig_welding" title="Precision Heavy Fabrication & Welding" alt="Heavy Industrial Welding Process" className="rounded-3 shadow mb-4 w-100" style={{ height: '240px' }} />
-                  <h4 className="fw-bold mb-3">Our Quality Objectives</h4>
-                  <ul className="list-unstyled mb-0">
-                    <li className="mb-2"><i className="bi bi-bullseye text-warning me-2" style={{ color: '#f57c00' }}></i> Achieving 100% On-Time Delivery</li>
-                    <li className="mb-2"><i className="bi bi-bullseye text-warning me-2" style={{ color: '#f57c00' }}></i> Ensuring Zero Defect Manufacturing</li>
-                    <li className="mb-2"><i className="bi bi-bullseye text-warning me-2" style={{ color: '#f57c00' }}></i> 100% Material Traceability</li>
-                    <li><i className="bi bi-bullseye text-warning me-2" style={{ color: '#f57c00' }}></i> Continuous Upgrade of Machining Infrastructure</li>
-                  </ul>
-                </Card.Body>
-                <Card.Footer className="border-0 bg-transparent pt-0 pb-3">
-                  <div className="p-3 bg-dark rounded text-center" style={{ backgroundColor: '#071322' }}>
-                    <span className="fw-bold d-block mb-1">Send your blueprints for review:</span>
-                    <a href={`mailto:${companyData.contact.email}`} className="text-warning text-decoration-none font-monospace">{companyData.contact.email}</a>
-                  </div>
-                </Card.Footer>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* Manufacturing Motto Section */}
-      <section className="slogan-motto-section" data-aos="fade-up" data-aos-duration="1000">
-        <Container>
-          <div className="slogan-card-container">
-            {/* Parallelogram Ribbon Bar */}
-            <div className="slogan-ribbon-bar">
-              <div className="slogan-ribbon-side"></div>
-              <div className="slogan-ribbon-center">
-                <h2 className="slogan-ribbon-text">WE FABRICATE , WE BUILD , WE DELIVER</h2>
-              </div>
-              <div className="slogan-ribbon-side"></div>
-            </div>
-
-            {/* 3 Interactive Motto Pillars */}
-            <Row className="g-4">
-              <Col lg={4} md={6}>
-                <div className="slogan-pillar-card">
-                  <div className="bg-warning text-navy rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style={{ width: '56px', height: '56px', backgroundColor: '#f57c00' }}>
-                    <i className="bi bi-gear-wide-connected fs-3 text-white"></i>
-                  </div>
-                  <h3 className="h5 fw-bold text-white mb-2">We Fabricate</h3>
-                  <p className="small text-white-50 mb-0">
-                    6kW CNC Fiber Laser Cutting, 16mm plate rolling, and 3m hydraulic press brake forming with ISO 9001:2015 precision.
-                  </p>
-                </div>
-              </Col>
-
-              <Col lg={4} md={6}>
-                <div className="slogan-pillar-card">
-                  <div className="bg-warning text-navy rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style={{ width: '56px', height: '56px', backgroundColor: '#f57c00' }}>
-                    <i className="bi bi-building-fill-gear fs-3 text-white"></i>
-                  </div>
-                  <h3 className="h5 fw-bold text-white mb-2">We Build</h3>
-                  <p className="small text-white-50 mb-0">
-                    High-capacity storage tanks, steam distribution pipeline ducts, PEB structural steelwork, & rail coach components.
-                  </p>
-                </div>
-              </Col>
-
-              <Col lg={4} md={12}>
-                <div className="slogan-pillar-card">
-                  <div className="bg-warning text-navy rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style={{ width: '56px', height: '56px', backgroundColor: '#f57c00' }}>
-                    <i className="bi bi-truck-flatbed fs-3 text-white"></i>
-                  </div>
-                  <h3 className="h5 fw-bold text-white mb-2">We Deliver</h3>
-                  <p className="small text-white-50 mb-0">
-                    10 MT EOT crane maneuvering, 22,500 sq.ft open staging yards, and 100% on-time site dispatch logistics.
-                  </p>
-                </div>
-              </Col>
-            </Row>
-          </div>
         </Container>
       </section>
 
@@ -263,9 +139,9 @@ export const Home = () => {
       <section className="py-5 bg-light">
         <Container className="py-lg-5">
           <div className="text-center mb-5">
-            <h2 className="display-6 fw-bold text-navy mb-3">Our Core Engineering Capabilities</h2>
+            <h2 className="display-6 fw-bold text-navy mb-3">Our Fabrication Specializations</h2>
             <p className="lead text-secondary max-w-700 mx-auto">
-              From heavy structural fabrication to precision steam pipelines, our modern equipment and expansive plant enable us to fabricate exactly to your specifications.
+              From storage tanks for water & condensate to PEB structural steelwork, steam distribution pipeline ducts, air ducts, and rail coach parts, NAC provides complete engineering solutions across 2 manufacturing units.
             </p>
           </div>
           <Row className="g-4">
@@ -287,17 +163,21 @@ export const Home = () => {
       <section className="py-5 bg-white" data-aos="fade-up" data-aos-duration="1000">
         <Container>
           <div className="text-center mb-5">
-            <h3 className="h5 fw-bold text-navy mt-1">Key Customers & Institutional Partners</h3>
+            <h2 className="display-6 fw-bold text-navy mb-3">Our Clients: Airflow, C.Doctor, IRG Fabrication</h2>
+            <p className="text-secondary lead max-w-800 mx-auto">
+              Trusted heavy engineering fabrication partner for industrial market leaders including <strong>AIRFLOW</strong>, <strong>C.DOCTOR</strong>, <strong>IRG FABRICATION</strong>, <strong>ENEXIO POWER COOLING</strong>, and <strong>ENVIRO ENGINEERING</strong>.
+            </p>
             <div className="mx-auto bg-warning mt-2" style={{ width: '60px', height: '3px', backgroundColor: '#f57c00' }}></div>
           </div>
           
-          <Row className="justify-content-center align-items-center g-4 row-cols-2 row-cols-md-3 row-cols-lg-6">
+          <Row className="justify-content-center align-items-center g-4 row-cols-2 row-cols-md-3 row-cols-lg-7">
             {clientLogos.map((client, idx) => (
               <Col key={idx} className="text-center" data-aos="zoom-in" data-aos-delay={idx * 100}>
                 <div className="p-3 border border-light rounded-3 bg-white shadow-sm h-100 d-flex align-items-center justify-content-center" style={{ minHeight: '120px' }}>
                   <img 
                     src={client.logo} 
-                    alt={`${client.name} Logo`} 
+                    alt={`${client.name} Fabrication in Chennai Cuddalore - Naveen Auto Components`} 
+                    loading="lazy"
                     className="img-fluid"
                     style={{ maxHeight: '70px', objectFit: 'contain', filter: 'grayscale(100%) opacity(70%)', transition: 'all 0.3s ease' }}
                     onMouseOver={(e) => { e.currentTarget.style.filter = 'grayscale(0%) opacity(100%)' }}

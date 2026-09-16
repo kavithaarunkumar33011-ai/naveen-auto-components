@@ -22,17 +22,17 @@ export const ServicesHub = () => {
   return (
     <>
       <SEO 
-        title="Heavy Fabrication in Chennai and Cuddalore | Fabrication Services Hub"
-        description="Explore premier Heavy Fabrication in Chennai and Cuddalore. Naveen Auto Components manufactures storage tanks, steam pipeline ducts, PEB structural steelwork, rail coach parts, & heavy blowers."
+        title="Fabrication Products - Storage Tanks, PEB Structure, Duct Pipe Line & Rail Coach Parts | NAC"
+        description="Fabrication Products by Naveen Auto Components (NAC): Storage Tanks, PEB Structures, Steam Distribution Pipeline Ducts, Header Pipeline, Rail Coach Parts, Air Duct & Bins."
         canonical="/services"
         schema={servicesHubSchema}
       />
 
       <PageBanner 
-        title="All Capabilities Overview" 
-        subtitle="Comprehensive Heavy Fabrication in Chennai and Cuddalore."
-        breadcrumbs={[{ label: 'Services', url: '/services' }]}
-        image="/images/hd/services/storage-tanks.jpg"
+        title="Our Fabrication Products & Engineering Solutions" 
+        subtitle="Comprehensive Heavy Fabrication Products in Chennai and Cuddalore."
+        breadcrumbs={[{ label: 'Products', url: '/services' }]}
+        image="/images/hd/services/storage-tank-water-condensate-fabrication-chennai-nac-21.webp"
       />
 
       {/* Services Grid */}

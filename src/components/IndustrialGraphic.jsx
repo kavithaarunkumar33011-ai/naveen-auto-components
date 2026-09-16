@@ -26,7 +26,7 @@ export const IndustrialGraphic = ({ type = "tank", title = "Heavy Fabrication", 
     "rail_coach_folding": "/images/hd/projects/rail_coach_folding.jpg",
     "rail_coach_parts": "/images/hd/projects/rail_coach_parts.jpg",
     "consent_state_nozzle": "/images/hd/projects/consent_state_nozzle.jpg",
-    "consent_state_tank": "/images/hd/services/storage-tanks.jpg",
+    "consent_state_tank": "/images/hd/services/storage-tank-water-condensate-fabrication-chennai-nac-21.webp",
     "flash_tank": "/images/hd/projects/flash_tank.jpg",
     "header_pipe": "/images/hd/projects/header_pipe.jpg",
     "duct_pipeline": "/images/hd/projects/duct_pipeline.jpg",
@@ -53,17 +53,17 @@ export const IndustrialGraphic = ({ type = "tank", title = "Heavy Fabrication", 
     "cuddalore_pipe_rolling": "/images/hd/projects/cuddalore_flame_cutting.jpg",
 
     // Services Sub-Page Fallbacks (Clean Online Generated AI Banners for Home, Cards & Header Banners)
-    "storage-tanks": "/images/hd/services/storage-tanks.jpg",
-    "pipeline-ducts": "/images/hd/services/pipeline-ducts.jpg",
-    "peb-structural": "/images/hd/services/peb-structural.jpg",
-    "rail-bus-coach": "/images/hd/services/rail-bus-coach.jpg",
-    "air-duct-blower": "/images/hd/services/air-duct-blower.jpg",
+    "storage-tanks": "/images/hd/services/storage-tank-water-condensate-fabrication-chennai-nac-21.webp",
+    "pipeline-ducts": "/images/hd/services/steam-pipeline-duct-fabrication-cuddalore-nac-23.webp",
+    "peb-structural": "/images/hd/services/peb-structural-fabrication-nac-chennai-25.webp",
+    "rail-bus-coach": "/images/hd/services/rail-coach-parts-fabrication-nac-27.webp",
+    "air-duct-blower": "/images/hd/services/air-duct-fabrication-airflow-client-nac-28.webp",
     "heavy-handling-logistics": "/images/hd/services/heavy-fabrication-product-handling-logistics.jpeg",
-    "tank": "/images/hd/services/storage-tanks.jpg",
+    "tank": "/images/hd/services/storage-tank-water-condensate-fabrication-chennai-nac-21.webp",
     "crane": "/images/hd/services/heavy-handling-logistics.jpg"
   };
 
-  const imageSrc = imageMap[type] || "/images/hd/services/storage-tanks.jpg";
+  const imageSrc = imageMap[type] || "/images/hd/services/storage-tank-water-condensate-fabrication-chennai-nac-21.webp";
 
   const handleZoomIn = () => setZoomLevel((prev) => Math.min(prev + 0.3, 2.5));
   const handleZoomOut = () => setZoomLevel((prev) => Math.max(prev - 0.3, 1));

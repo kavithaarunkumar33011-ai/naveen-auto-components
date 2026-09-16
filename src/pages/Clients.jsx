@@ -11,42 +11,42 @@ export const Clients = () => {
       tagline: "Industrial Air Conditioning & Humidification Pioneers",
       scope: "Duct pipeline products, factory loading, pipe bracing stands with shot blasting & epoxy painting.",
       location: "Multi-Unit Supply",
-      logo: "/images/logos/doctor&co.pvt.ltd.jpeg"
+      logo: "/images/logos/cdoctor-company-client-logo-nac.webp"
     },
     {
       name: "ENEXIO Power Cooling",
       tagline: "Global Power Plant Cooling Infrastructure",
       scope: "Consent-state tanks, flash tanks, header pipes, structural fan guards, heavy beams & hand rails.",
       location: "Power & Thermal Sector",
-      logo: "/images/logos/enexio.jpg"
+      logo: "/images/logos/enexio-power-cooling-client-logo-nac.webp"
     },
     {
       name: "On Load Gears (OLG)",
       tagline: "Transformer & Heavy Electrical Switchgear Equipment",
       scope: "Sheet metal enclosures, mounting brackets, and specialized electrical hardware housings.",
       location: "Electrical & Power Equipment",
-      logo: "/images/logos/on_load_gears.jpeg"
+      logo: "/images/logos/on-load-gears-client-logo-nac.webp"
     },
     {
       name: "NADI Industrial Fans",
       tagline: "Heavy Industrial Ventilation & Air Handling Equipment",
       scope: "Large diameter fan casings, heavy air ducting, and dynamic volute assemblies.",
       location: "Air Handling & HVAC",
-      logo: "/images/logos/nadi_fans.jpg"
+      logo: "/images/logos/nadi-fans-client-logo-nac.webp"
     },
     {
       name: "Airflow",
       tagline: "Industrial Air Movement & Blowers",
       scope: "Air blower products, multi-unit rectangular & circular industrial air duct assemblies.",
       location: "Air Systems",
-      logo: "/images/logos/airflow.jpg"
+      logo: "/images/logos/airflow-client-logo-nac.webp"
     },
     {
       name: "Ability Enterprises",
       tagline: "General Heavy Engineering & Contracting",
       scope: "Structural steel frameworks, custom PEB components, and rolled heavy plate assemblies.",
       location: "Infrastructure & Heavy Fabrication",
-      logo: "/images/logos/ability_enterprises.jpeg"
+      logo: "/images/logos/ability-enterprises-client-logo-nac.webp"
     }
   ];
 
@@ -70,7 +70,7 @@ export const Clients = () => {
         title="Our Clients" 
         subtitle="Trusted OEM partners for Heavy Fabrication in Chennai and Cuddalore."
         breadcrumbs={[{ label: 'Clients', url: '/clients' }]}
-        image="/images/hd/clients_banner.jpeg"
+        image="/images/hd/trusted-clients-banner-nac-chennai-cuddalore.webp"
       />
 
       {/* Main Customers Grid */}
