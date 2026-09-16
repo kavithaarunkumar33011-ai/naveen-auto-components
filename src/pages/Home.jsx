@@ -197,13 +197,156 @@ export const Home = () => {
       </section>
 
       {/* Slogan & Motto Section */}
-      <section className="py-5 text-white" style={{ background: 'linear-gradient(135deg, #071322 0%, #0b1e36 100%)' }} data-aos="fade-up">
+      <section className="py-5 text-white overflow-hidden" style={{ background: 'linear-gradient(135deg, #071322 0%, #0b1e36 100%)' }} data-aos="fade-up">
+        <style>
+          {`
+            /* Sparkling 3D Industrial Ribbon */
+            .ribbon-banner-wrapper {
+              position: relative;
+              display: inline-block;
+              margin-bottom: 25px;
+              padding: 0 45px;
+            }
+
+            .ribbon-banner-body {
+              position: relative;
+              background: linear-gradient(135deg, #d97706 0%, #f57c00 35%, #ff9800 65%, #e65100 100%);
+              color: #ffffff;
+              padding: 18px 45px;
+              border-radius: 6px;
+              box-shadow: 0 10px 30px rgba(245, 124, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -2px 5px rgba(0, 0, 0, 0.3);
+              overflow: hidden;
+              border: 1px solid rgba(255, 255, 255, 0.35);
+            }
+
+            /* 3D Folded Ribbon Tail Left & Right */
+            .ribbon-banner-wrapper::before,
+            .ribbon-banner-wrapper::after {
+              content: "";
+              position: absolute;
+              top: 10px;
+              width: 40px;
+              height: calc(100% - 10px);
+              background: #92400e;
+              z-index: 0;
+            }
+
+            .ribbon-banner-wrapper::before {
+              left: 10px;
+              transform: skewY(14deg);
+              border-radius: 6px 0 0 6px;
+              box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .ribbon-banner-wrapper::after {
+              right: 10px;
+              transform: skewY(-14deg);
+              border-radius: 0 6px 6px 0;
+              box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            /* Metallic Light Beam Shimmer Sweep Animation */
+            @keyframes ribbonShimmer {
+              0% {
+                transform: translateX(-150%) skewX(-30deg);
+                opacity: 0;
+              }
+              15% {
+                opacity: 0.85;
+              }
+              45% {
+                transform: translateX(250%) skewX(-30deg);
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(250%) skewX(-30deg);
+                opacity: 0;
+              }
+            }
+
+            .ribbon-shimmer-beam {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 50%;
+              height: 100%;
+              background: linear-gradient(
+                90deg, 
+                transparent 0%, 
+                rgba(255, 255, 255, 0.15) 20%, 
+                rgba(255, 255, 255, 0.9) 50%, 
+                rgba(255, 255, 255, 0.15) 80%, 
+                transparent 100%
+              );
+              animation: ribbonShimmer 3.6s infinite ease-in-out;
+              pointer-events: none;
+              z-index: 1;
+            }
+
+            /* Sparkling Stars Animation */
+            @keyframes starSparkle {
+              0%, 100% { opacity: 0.3; transform: scale(0.85) rotate(0deg); }
+              50% { opacity: 1; transform: scale(1.3) rotate(90deg); filter: drop-shadow(0 0 8px #ffffff); }
+            }
+
+            .sparkle-icon {
+              display: inline-block;
+              color: #fff;
+              font-size: 1.2rem;
+              margin: 0 8px;
+              animation: starSparkle 2.2s infinite ease-in-out;
+              vertical-align: middle;
+            }
+
+            .sparkle-icon.delay-1 { animation-delay: 0.7s; }
+            .sparkle-icon.delay-2 { animation-delay: 1.4s; }
+
+            .ribbon-text {
+              position: relative;
+              z-index: 2;
+              font-size: 1.8rem;
+              font-weight: 900;
+              letter-spacing: 3px;
+              text-transform: uppercase;
+              color: #ffffff !important;
+              text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 0 16px rgba(255, 255, 255, 0.6);
+              margin: 0;
+            }
+
+            @media (max-width: 768px) {
+              .ribbon-banner-wrapper {
+                padding: 0 15px;
+              }
+              .ribbon-banner-body {
+                padding: 14px 20px;
+              }
+              .ribbon-text {
+                font-size: 1.15rem;
+                letter-spacing: 1.5px;
+              }
+              .sparkle-icon {
+                font-size: 0.95rem;
+                margin: 0 4px;
+              }
+            }
+          `}
+        </style>
+
         <Container>
           <div className="text-center mb-5">
-            <div className="d-inline-block px-4 py-2 rounded-3 mb-3" style={{ background: 'linear-gradient(90deg, #f57c00 0%, #ff9800 100%)', color: '#fff' }}>
-              <h2 className="fw-extrabold mb-0 text-white text-uppercase" style={{ letterSpacing: '3px', fontSize: '1.75rem' }}>
-                WE FABRICATE , WE BUILD , WE DELIVER
-              </h2>
+            <div className="ribbon-banner-wrapper">
+              <div className="ribbon-banner-body">
+                <div className="ribbon-shimmer-beam"></div>
+                <h2 className="ribbon-text">
+                  <span className="sparkle-icon"><i className="bi bi-stars"></i></span>
+                  WE FABRICATE
+                  <span className="sparkle-icon delay-1"><i className="bi bi-dash-lg"></i></span>
+                  WE BUILD
+                  <span className="sparkle-icon delay-2"><i className="bi bi-dash-lg"></i></span>
+                  WE DELIVER
+                  <span className="sparkle-icon"><i className="bi bi-stars"></i></span>
+                </h2>
+              </div>
             </div>
             <p className="lead text-white-50 max-w-700 mx-auto">
               Our core manufacturing commitment driving quality heavy engineering across Chennai & Cuddalore units.
