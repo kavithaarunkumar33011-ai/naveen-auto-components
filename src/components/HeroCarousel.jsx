@@ -1,122 +1,197 @@
-import React from 'react';
-import { Carousel, Button, Container, Row, Col } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+const carouselData = [
+  { img: "/images/carousel/storage-tank-fabrication-clean-nac-01.webp", h1: "Storage Tank Fabrication", p: "Water & Condensate Tanks - ISO 9001:2015 Certified" },
+  { img: "/images/carousel/peb-structural-fabrication-clean-nac-02.webp", h1: "PEB Structural Fabrication", p: "Pre-Engineered Building Structures" },
+  { img: "/images/carousel/air-blower-duct-fabrication-clean-nac-03.webp", h1: "Air Blower & Air Duct Fabrication", p: "Trusted by AIRFLOW" },
+  { img: "/images/carousel/heavy-beam-fabrication-clean-nac-04.webp", h1: "Heavy Structural Beam Fabrication", p: "For ENVIRO & ENXIO Projects" },
+  { img: "/images/carousel/rail-coach-components-clean-nac-05.webp", h1: "Rail & Bus Coach Components", p: "Manufactured for IRG Fabrication" },
+  { img: "/images/carousel/steam-header-pipeline-clean-nac-06.webp", h1: "Steam & Header Pipeline Duct", p: "Duct Pipe Line Products for C.DOCTOR" },
+  { img: "/images/carousel/material-handling-bins-clean-nac-07.webp", h1: "Material Handling & Heat Treatment Bins", p: "Heavy Duty Industrial Bins" },
+  { img: "/images/carousel/pressure-vessels-tanks-clean-nac-08.webp", h1: "Pressure Vessels & Storage Tanks", p: "WE FABRICATE, WE BUILD, WE DELIVER" },
+];
+
 export const HeroCarousel = () => {
-  const slides = [
-    {
-      id: 1,
-      video: '/videos/placeholder-1.mp4',
-      imageFallback: '/images/hd/heavy-fabrication-hero-hd-nac-01.webp',
-      tagline: "Heavy Engineering Excellence",
-      title: "Ferrous & Non-Ferrous Metal Fabrication",
-      highlight: "For Industrial Process Equipments",
-      desc: "Top-tier custom metal fabrication services delivering precision-engineered industrial solutions with ISO 9001:2015 quality standards."
-    },
-    {
-      id: 2,
-      video: '/videos/placeholder-2.mp4',
-      imageFallback: '/images/hd/steam-pipeline-duct-fabrication-cuddalore-nac-03.webp',
-      tagline: "Infrastructure & Piping",
-      title: "PEB Structural Fabrication & Pipeline Ducts",
-      highlight: "Heavy-Duty Industrial Frameworks",
-      desc: "Expert manufacturing of Pre-Engineering Buildings (PEB) and robust steam distribution pipeline ducts for extreme industrial demands."
-    },
-    {
-      id: 3,
-      video: '/videos/placeholder-3.mp4',
-      imageFallback: '/images/hd/peb-structural-fabrication-nac-chennai-04.webp',
-      tagline: "Turnkey Manufacturing",
-      title: "Industrial Storage Tanks & Custom Equipment",
-      highlight: "Delivering Fully Finished Products",
-      desc: "From engineering special purpose equipments to massive storage tanks, we deliver fully assembled and rigorously tested manufacturing solutions."
-    }
-  ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselData.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
 
   return (
     <>
       <style>
         {`
-          @keyframes kenburns { 
-            0% { transform: scale(1.0); } 
-            50% { transform: scale(1.12); } 
-            100% { transform: scale(1.0); } 
+          .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            min-height: 580px;
+            overflow: hidden;
+            background-color: #071322;
           }
-          .ken-burns-effect { 
-            animation: kenburns 15s ease-in-out infinite; 
+          .carousel-slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
           }
-          .hero-title-shadow {
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95), 0 2px 6px rgba(0, 0, 0, 0.9);
+          .carousel-slide.active {
+            opacity: 1;
+            z-index: 1;
           }
-          .hero-highlight-glow {
-            color: #ffb74d !important;
-            text-shadow: 0 0 25px rgba(245, 124, 0, 0.7), 0 2px 8px rgba(0,0,0,0.95);
+          .carousel-slide::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 70%);
+            z-index: 1;
+          }
+          .carousel-text {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            max-width: 650px;
+            padding: 160px 0 0 80px;
+            text-shadow: 0 2px 15px rgba(0,0,0,0.9);
+          }
+          .carousel-text h1, .carousel-text h2 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.1;
+            color: #ffffff !important;
+            margin-bottom: 12px;
+          }
+          .carousel-text p {
+            font-size: 18px;
+            color: #e0e0e0;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+          }
+          .carousel-dots {
+            position: absolute;
+            bottom: 30px;
+            left: 80px;
+            z-index: 3;
+            display: flex;
+            gap: 10px;
+          }
+          .carousel-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 0;
+          }
+          .carousel-dot.active {
+            background-color: #f57c00;
+            border-color: #ffffff;
+            transform: scale(1.25);
+            box-shadow: 0 0 10px rgba(245, 124, 0, 0.9);
+          }
+
+          @media (max-width: 768px) {
+            .carousel-container {
+              height: 85vh;
+              min-height: 500px;
+            }
+            .carousel-slide::before {
+              background: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.4) 100%);
+            }
+            .carousel-text {
+              max-width: 100%;
+              padding: 100px 20px 40px 20px;
+            }
+            .carousel-text h1, .carousel-text h2 {
+              font-size: 30px;
+            }
+            .carousel-text p {
+              font-size: 15px;
+            }
+            .carousel-dots {
+              bottom: 20px;
+              left: 20px;
+            }
           }
         `}
       </style>
-      <Carousel fade controls={false} indicators={true} interval={6000} className="hero-carousel">
-      {slides.map((slide) => (
-        <Carousel.Item key={slide.id} className="vh-100 min-vh-600 position-relative">
-          
-          {/* Background Image Container */}
-          <div className="position-absolute top-0 start-0 w-100 h-100 bg-navy overflow-hidden" style={{ backgroundColor: '#071322' }}>
-            {/* Cinematic Motion Hero Image */}
-            <div 
-              className="w-100 h-100 position-absolute top-0 start-0 ken-burns-effect"
-              style={{
-                backgroundImage: `url(${slide.imageFallback})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                zIndex: 0
-              }}
-            ></div>
-            
-            {/* Enhanced Dark Gradient Overlay for Maximum Text Readability */}
-            <div 
-              className="position-absolute top-0 start-0 w-100 h-100" 
-              style={{ background: 'linear-gradient(90deg, rgba(7,19,34,0.88) 0%, rgba(7,19,34,0.65) 55%, rgba(7,19,34,0.30) 100%)', zIndex: 2 }}
-            ></div>
-          </div>
 
-          {/* Carousel Overlay Content - Left Aligned Direct Text */}
-          <Carousel.Caption className="d-flex flex-column justify-content-center h-100 bottom-0 pb-0 text-start">
-            <Container className="position-relative z-1 pt-5">
-              <Row>
-                <Col lg={8} md={10}>
-                  <h3 className="fw-bold mb-3 fs-5 text-uppercase tracking-tight" style={{ color: '#ffc107', letterSpacing: '1.5px', textShadow: '0 2px 8px rgba(0,0,0,0.95)' }}>
-                    <span style={{ width: '40px', height: '3px', backgroundColor: '#f57c00', display: 'inline-block', verticalAlign: 'middle', marginRight: '15px' }}></span>
-                    {slide.tagline}
-                  </h3>
-                  {slide.id === 1 ? (
-                    <h1 className="display-4 fw-extrabold text-white mb-3 lh-sm" style={{ textShadow: '0 4px 16px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.85)' }}>
-                      Heavy Engineering and Processing Equipment Fabrication <br />
-                      <span className="fw-extrabold" style={{ color: '#ffc107', textShadow: '0 4px 16px rgba(0,0,0,0.95), 0 0 20px rgba(245,124,0,0.5)' }}>in Chennai & Cuddalore</span>
-                    </h1>
+      <div className="carousel-container">
+        {carouselData.map((slide, index) => {
+          const isActive = index === currentIndex;
+          return (
+            <div
+              key={index}
+              className={`carousel-slide ${isActive ? 'active' : ''}`}
+              style={{ backgroundImage: `url(${slide.img})` }}
+              role="img"
+              aria-label={`${slide.h1} - Naveen Auto Components Chennai Cuddalore`}
+            >
+              {isActive && (
+                <div className="carousel-text">
+                  {index === 0 ? (
+                    <h1>Heavy Engineering &amp; {slide.h1}</h1>
                   ) : (
-                    <h2 className="display-4 fw-extrabold text-white mb-3 lh-sm" style={{ textShadow: '0 4px 16px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.85)' }}>
-                      {slide.title} <br />
-                      <span className="fw-extrabold" style={{ color: '#ffc107', textShadow: '0 4px 16px rgba(0,0,0,0.95), 0 0 20px rgba(245,124,0,0.5)' }}>{slide.highlight}</span>
-                    </h2>
+                    <h2>{slide.h1}</h2>
                   )}
-                  <p className="lead mb-4 max-w-700 fw-medium" style={{ fontSize: '1.25rem', lineHeight: '1.6', color: '#f8fafc', textShadow: '0 2px 10px rgba(0,0,0,0.95)' }}>
-                    {slide.desc}
-                  </p>
-                  <div className="d-flex flex-wrap gap-3 pt-2">
-                    <Button as={Link} to="/contact" variant="warning" size="lg" className="fw-bold px-4 py-3 shadow-lg" style={{ backgroundColor: '#f57c00', borderColor: '#f57c00', color: '#fff' }}>
-                      Request an RFQ Proposal <i className="bi bi-arrow-right ms-2"></i>
+                  <p>{slide.p}</p>
+                  <div className="d-flex flex-wrap gap-3">
+                    <Button
+                      as={Link}
+                      to="/contact"
+                      variant="warning"
+                      size="lg"
+                      className="fw-bold px-4 py-3 shadow"
+                      style={{ backgroundColor: '#f57c00', borderColor: '#f57c00', color: '#fff' }}
+                    >
+                      Request RFQ Proposal <i className="bi bi-arrow-right ms-2"></i>
                     </Button>
-                    <Button as={Link} to="/services" variant="outline-light" size="lg" className="fw-bold px-4 py-3 shadow-lg backdrop-blur">
+                    <Button
+                      as={Link}
+                      to="/services"
+                      variant="outline-light"
+                      size="lg"
+                      className="fw-bold px-4 py-3 shadow"
+                    >
                       Explore Capabilities
                     </Button>
                   </div>
-                </Col>
-              </Row>
-            </Container>
-          </Carousel.Caption>
+                </div>
+              )}
+            </div>
+          );
+        })}
 
-        </Carousel.Item>
-      ))}
-      </Carousel>
+        {/* 8 Navigation Dots */}
+        <div className="carousel-dots">
+          {carouselData.map((_, idx) => (
+            <button
+              key={idx}
+              className={`carousel-dot ${idx === currentIndex ? 'active' : ''}`}
+              onClick={() => goToSlide(idx)}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
+        </div>
+      </div>
     </>
   );
 };
