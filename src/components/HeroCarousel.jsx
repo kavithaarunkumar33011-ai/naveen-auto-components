@@ -3,14 +3,46 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const carouselData = [
-  { img: "/images/carousel/storage-tank-fabrication-clean-nac-01.webp", h1: "Storage Tank Fabrication", p: "Water & Condensate Tanks - ISO 9001:2015 Certified" },
-  { img: "/images/carousel/peb-structural-fabrication-clean-nac-02.webp", h1: "PEB Structural Fabrication", p: "Pre-Engineered Building Structures" },
-  { img: "/images/carousel/air-blower-duct-fabrication-clean-nac-03.webp", h1: "Air Blower & Air Duct Fabrication", p: "Trusted by AIRFLOW" },
-  { img: "/images/carousel/heavy-beam-fabrication-clean-nac-04.webp", h1: "Heavy Structural Beam Fabrication", p: "For ENVIRO & ENXIO Projects" },
-  { img: "/images/carousel/rail-coach-components-clean-nac-05.webp", h1: "Rail & Bus Coach Components", p: "Manufactured for IRG Fabrication" },
-  { img: "/images/carousel/steam-header-pipeline-clean-nac-06.webp", h1: "Steam & Header Pipeline Duct", p: "Duct Pipe Line Products for C.DOCTOR" },
-  { img: "/images/carousel/material-handling-bins-clean-nac-07.webp", h1: "Material Handling & Heat Treatment Bins", p: "Heavy Duty Industrial Bins" },
-  { img: "/images/carousel/pressure-vessels-tanks-clean-nac-08.webp", h1: "Pressure Vessels & Storage Tanks", p: "WE FABRICATE, WE BUILD, WE DELIVER" },
+  {
+    img: "/images/carousel/storage-tank-fabrication-clean-nac-01.webp",
+    h1: "Storage Tank Fabrication Experts",
+    p: "Water, Condensate & Fuel Storage Tanks | ISO 9001:2015 Certified Manufacturing"
+  },
+  {
+    img: "/images/carousel/peb-structural-fabrication-clean-nac-02.webp",
+    h1: "PEB Structural Fabrication",
+    p: "Pre-Engineered Building Structures | Heavy-Duty Steel Structures Built to Last"
+  },
+  {
+    img: "/images/carousel/air-blower-duct-fabrication-clean-nac-03.webp",
+    h1: "Industrial Air Blower & Duct Systems",
+    p: "High-Performance Air Blower Housings & Spiral Duct Fabrication"
+  },
+  {
+    img: "/images/carousel/heavy-beam-fabrication-clean-nac-04.webp",
+    h1: "Heavy Structural Fabrication",
+    p: "I-Beams, Heavy Columns & Power Cooling Equipment | EOT Crane Handling"
+  },
+  {
+    img: "/images/carousel/rail-coach-components-clean-nac-05.webp",
+    h1: "Rail & Bus Coach Components",
+    p: "Precision Chassis & Coach Components for Transportation Industry"
+  },
+  {
+    img: "/images/carousel/steam-header-pipeline-clean-nac-06.webp",
+    h1: "Steam & Header Pipeline Systems",
+    p: "Steam Distribution Headers, Process Piping & Industrial Duct Lines"
+  },
+  {
+    img: "/images/carousel/material-handling-bins-clean-nac-07.webp",
+    h1: "Material Handling & Heat Treatment Bins",
+    p: "Heavy-Duty Industrial Bins | Custom Fabrication | Bulk Production Capacity"
+  },
+  {
+    img: "/images/carousel/pressure-vessels-tanks-clean-nac-08.webp",
+    h1: "WE FABRICATE, WE BUILD, WE DELIVER",
+    p: "Pressure Vessels, Storage Tanks & Heavy Engineering | Chennai & Cuddalore Units"
+  }
 ];
 
 export const HeroCarousel = () => {
@@ -148,7 +180,7 @@ export const HeroCarousel = () => {
               {isActive && (
                 <div className="carousel-text">
                   {index === 0 ? (
-                    <h1>Heavy Engineering &amp; {slide.h1}</h1>
+                    <h1>{slide.h1}</h1>
                   ) : (
                     <h2>{slide.h1}</h2>
                   )}
