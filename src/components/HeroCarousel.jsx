@@ -7,7 +7,7 @@ export const HeroCarousel = () => {
     {
       id: 1,
       video: '/videos/placeholder-1.mp4',
-      imageFallback: '/images/hd/storage-tank-water-condensate-fabrication-chennai-nac-01.webp',
+      imageFallback: '/images/hd/heavy-fabrication-hero-hd-nac-01.webp',
       tagline: "Heavy Engineering Excellence",
       title: "Ferrous & Non-Ferrous Metal Fabrication",
       highlight: "For Industrial Process Equipments",
@@ -46,11 +46,11 @@ export const HeroCarousel = () => {
             animation: kenburns 15s ease-in-out infinite; 
           }
           .hero-title-shadow {
-            text-shadow: 0 4px 16px rgba(0, 0, 0, 0.9), 0 2px 4px rgba(0, 0, 0, 0.8);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95), 0 2px 6px rgba(0, 0, 0, 0.9);
           }
           .hero-highlight-glow {
             color: #ffb74d !important;
-            text-shadow: 0 0 20px rgba(245, 124, 0, 0.6), 0 2px 8px rgba(0,0,0,0.9);
+            text-shadow: 0 0 25px rgba(245, 124, 0, 0.7), 0 2px 8px rgba(0,0,0,0.95);
           }
         `}
       </style>
@@ -71,10 +71,10 @@ export const HeroCarousel = () => {
               }}
             ></div>
             
-            {/* Bright & Clear Cinematic Overlay Gradient */}
+            {/* Enhanced Dark Gradient Overlay for Maximum Text Readability */}
             <div 
               className="position-absolute top-0 start-0 w-100 h-100" 
-              style={{ background: 'linear-gradient(90deg, rgba(7,19,34,0.65) 0%, rgba(7,19,34,0.35) 55%, rgba(0,0,0,0.10) 100%)', zIndex: 2 }}
+              style={{ background: 'linear-gradient(90deg, rgba(7,19,34,0.88) 0%, rgba(7,19,34,0.65) 55%, rgba(7,19,34,0.30) 100%)', zIndex: 2 }}
             ></div>
           </div>
 
