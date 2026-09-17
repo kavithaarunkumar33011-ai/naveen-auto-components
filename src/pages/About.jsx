@@ -58,7 +58,7 @@ export const About = () => {
         title="NAVEEN AUTO COMPONENTS" 
         subtitle="Heavy Engineering and Processing Equipment Manufacture & Fabrication"
         breadcrumbs={[{ label: 'About Us', url: '/about' }]}
-        image="/images/factories/nac-office-ambattur-chennai-50.webp"
+        image="/images/hd/heavy-engineering-fabrication-chennai-nac-02.webp"
       />
 
       {/* Main About Content */}
