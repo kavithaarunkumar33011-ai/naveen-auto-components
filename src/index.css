@@ -59,6 +59,59 @@ body {
   color: #f57c00 !important;
 }
 
+/* ==========================================================================
+   Interactive Card Hover Animation System (Homepage & Site-Wide)
+   ========================================================================== */
+.card, .interactive-card, .service-card {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              border-color 0.4s ease, 
+              background-color 0.4s ease !important;
+  position: relative;
+  will-change: transform, box-shadow;
+}
+
+/* Hover Lift & 3D Depth Glow */
+.card:hover, .interactive-card:hover, .service-card:hover {
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 20px 35px -10px rgba(11, 30, 54, 0.18), 0 0 18px rgba(245, 124, 0, 0.15) !important;
+  border-color: rgba(245, 124, 0, 0.5) !important;
+}
+
+/* Card Icon & Logo Scale / Tilt Micro-Animation */
+.card:hover .icon-wrapper,
+.card:hover .rounded-circle i,
+.card:hover .rounded-circle img,
+.service-card:hover .icon-wrapper i {
+  transform: scale(1.15) rotate(4deg);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.icon-wrapper,
+.rounded-circle i,
+.rounded-circle img {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Card Badge Scale Micro-Animation */
+.card:hover .badge {
+  transform: translateY(-2px) scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card .badge {
+  transition: transform 0.3s ease;
+}
+
+/* Card Action Button Slide Effect */
+.card:hover .btn {
+  transform: translateX(4px);
+}
+
+.card .btn {
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
 /* Brand Logo Icon */
 .brand-logo-icon {
   font-family: 'JetBrains Mono', monospace;
