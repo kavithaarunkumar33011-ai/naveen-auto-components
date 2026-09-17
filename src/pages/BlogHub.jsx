@@ -10,15 +10,16 @@ export const BlogHub = () => {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Naveen Auto Components Engineering & Fabrication Insights",
-    "url": "https://www.naveenauto.com/blog",
+    "url": "https://naveenautocomponents.com/blog",
     "description": "Technical insights on heavy engineering fabrication, storage tanks, steam distribution pipeline ducts, PEB structural steel & ISO 9001 standards."
   };
 
   return (
     <>
       <SEO 
-        title="Heavy Fabrication Blog & Insights | Chennai and Cuddalore"
-        description="Technical articles & engineering insights on Heavy Fabrication in Chennai and Cuddalore: storage tank manufacturing, steam pipeline ducts, PEB steel, & ISO 9001 standards."
+        title="Heavy Fabrication News & Insights | Naveen Auto Components"
+        description="Technical articles and heavy engineering fabrication insights from Naveen Auto Components (naveenautocomponents.com)."
+        keywords="naveenautocomponents.com blog, Naveen Auto Components insights, heavy engineering articles Chennai, metal fabrication news Cuddalore"
         canonical="/blog"
         schema={blogSchema}
       />

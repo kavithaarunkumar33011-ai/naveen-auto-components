@@ -7,8 +7,9 @@ export const VisionMission = () => {
   return (
     <>
       <SEO 
-        title="Vision & Mission | Heavy Fabrication in Chennai and Cuddalore"
-        description="Our corporate vision and engineering mission for Heavy Fabrication in Chennai and Cuddalore. Driven by ISO 9001:2015 standards & technical innovation."
+        title="Vision & Mission | Naveen Auto Components"
+        description="Our corporate vision and engineering mission for heavy engineering metal fabrication at Naveen Auto Components (naveenautocomponents.com)."
+        keywords="naveenautocomponents.com, Naveen Auto Components vision, NAC mission, heavy engineering values, fabrication quality vision"
         canonical="/vision-mission"
       />
 

@@ -54,14 +54,16 @@ export const Clients = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Naveen Auto Components Client Network",
+    "url": "https://naveenautocomponents.com/clients",
     "description": "Trusted fabrication partner for C. Doctor, ENEXIO Power Cooling, On Load Gears, NADI Industrial Fans, Airflow, and Ability Enterprises."
   };
 
   return (
     <>
       <SEO 
-        title="Our Clients | Heavy Fabrication in Chennai and Cuddalore | NAC"
-        description="Trusted OEM partners for Heavy Fabrication in Chennai and Cuddalore: C. Doctor, ENEXIO Power Cooling, On Load Gears (OLG), NADI Industrial Fans, Airflow, & Ability Enterprises."
+        title="Clients & OEM Partners | Naveen Auto Components"
+        description="Industrial clients and OEM partners of Naveen Auto Components (naveenautocomponents.com) including Airflow, C.Doctor, Enexio, On Load Gears, and Nadi Industrial Fans."
+        keywords="naveenautocomponents.com, Naveen Auto Components clients, NAC partners, industrial fabrication clients Chennai, C.Doctor fabrication, Enexio supplier"
         canonical="/clients"
         schema={clientsSchema}
       />

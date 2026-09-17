@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <defs>
+    <style>
+      .vt-red { fill: #990000; stroke: #990000; }
+      .vt-stroke { stroke: #990000; stroke-width: 3; fill: none; }
+      .vt-text { font-family: 'Arial Black', 'Impact', sans-serif; font-weight: 900; fill: #990000; text-anchor: middle; letter-spacing: 2px; }
+    </style>
+    <path id="topArc" d="M 100,120 A 100,100 0 0,1 300,120" />
+    <path id="bottomArc" d="M 85,130 A 115,115 0 0,0 315,130" />
+  </defs>
+
+  <g transform="translate(0, 5)">
+    <!-- Top Text: VARSHA -->
+    <text font-size="28" class="vt-text">
+      <textPath href="#topArc" startOffset="50%" text-anchor="middle">VARSHA</textPath>
+    </text>
+
+    <!-- Left Wing -->
+    <g class="vt-red">
+      <path d="M 50,100 L 140,100 C 140,100 135,107 140,107 L 60,107 Z" />
+      <path d="M 55,112 L 140,112 C 140,112 135,119 140,119 L 65,119 Z" />
+      <path d="M 60,124 L 140,124 C 140,124 135,131 140,131 L 70,131 Z" />
+      <path d="M 65,136 L 140,136 C 140,136 135,143 140,143 L 75,143 Z" />
+      <!-- Left Wing Outline Frame -->
+      <path d="M 50,97 L 142,97 L 142,146 L 75,146 C 60,135 55,115 50,97 Z" fill="none" stroke="#990000" stroke-width="2.5" />
+    </g>
+
+    <!-- Right Wing -->
+    <g class="vt-red">
+      <path d="M 350,100 L 260,100 C 260,100 265,107 260,107 L 340,107 Z" />
+      <path d="M 345,112 L 260,112 C 260,112 265,119 260,119 L 335,119 Z" />
+      <path d="M 340,124 L 260,124 C 260,124 265,131 260,131 L 330,131 Z" />
+      <path d="M 335,136 L 260,136 C 260,136 265,143 260,143 L 325,143 Z" />
+      <!-- Right Wing Outline Frame -->
+      <path d="M 350,97 L 258,97 L 258,146 L 325,146 C 340,135 345,115 350,97 Z" fill="none" stroke="#990000" stroke-width="2.5" />
+    </g>
+
+    <!-- Center Globe Circle -->
+    <circle cx="200" cy="122" r="54" fill="#ffffff" stroke="#990000" stroke-width="3.5" />
+    
+    <!-- Globe Latitude Lines -->
+    <path d="M 148,122 L 252,122" stroke="#990000" stroke-width="2" />
+    <path d="M 154,102 A 54,25 0 0,1 246,102" stroke="#990000" stroke-width="1.8" fill="none" />
+    <path d="M 154,142 A 54,25 0 0,0 246,142" stroke="#990000" stroke-width="1.8" fill="none" />
+
+    <!-- Globe Longitude Ellipse Lines -->
+    <ellipse cx="200" cy="122" rx="34" ry="54" fill="none" stroke="#990000" stroke-width="1.8" />
+    <ellipse cx="200" cy="122" rx="18" ry="54" fill="none" stroke="#990000" stroke-width="1.8" />
+
+    <!-- Stylized VT Monogram Overlay -->
+    <!-- V Shape -->
+    <path d="M 172,82 L 200,162 L 228,82" fill="none" stroke="#990000" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- T Top Bar & Stem -->
+    <path d="M 160,82 L 240,82" stroke="#990000" stroke-width="6.5" stroke-linecap="round" />
+    <path d="M 200,82 L 200,162" stroke="#990000" stroke-width="6.5" stroke-linecap="round" />
+
+    <!-- Bottom Text: TECHNOLOGIES -->
+    <text font-size="22" class="vt-text">
+      <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">TECHNOLOGIES</textPath>
+    </text>
+  </g>
+</svg>

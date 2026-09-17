@@ -7,8 +7,9 @@ export const Certifications = () => {
   return (
     <>
       <SEO 
-        title="Certifications | Heavy Fabrication in Chennai and Cuddalore | NAC"
-        description="ISO 9001:2015 quality certifications & standards for Heavy Fabrication in Chennai and Cuddalore. Zero-defect quality management systems at Naveen Auto Components."
+        title="ISO 9001:2015 Certification & Quality | Naveen Auto Components"
+        description="ISO 9001:2015 quality standards and inspection assurance at Naveen Auto Components (naveenautocomponents.com) in Chennai & Cuddalore."
+        keywords="naveenautocomponents.com, ISO 9001:2015 certification, Naveen Auto Components quality policy, metal fabrication quality assurance"
         canonical="/certifications"
       />
 

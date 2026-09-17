@@ -47,7 +47,8 @@ export const ServiceDetail = () => {
     "name": service.title,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Naveen Auto Components"
+      "name": "Naveen Auto Components",
+      "url": "https://naveenautocomponents.com"
     },
     "description": service.fullDescription,
     "areaServed": "Tamil Nadu, India"
@@ -66,8 +67,9 @@ export const ServiceDetail = () => {
   return (
     <>
       <SEO 
-        title={service.seoTitle}
-        description={service.seoDesc}
+        title={`${service.seoTitle} | Naveen Auto Components`}
+        description={`${service.seoDesc} Engineered by Naveen Auto Components (naveenautocomponents.com).`}
+        keywords={`naveenautocomponents.com, Naveen Auto Components ${service.title}, ${service.title} fabrication, heavy engineering ${service.slug}, Chennai, Cuddalore, NAC`}
         canonical={`/services/${service.slug}`}
         schema={serviceSchema}
       />

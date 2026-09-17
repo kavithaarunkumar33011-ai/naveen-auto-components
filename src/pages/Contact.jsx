@@ -10,15 +10,16 @@ export const Contact = () => {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact Naveen Auto Components",
-    "url": "https://www.naveenauto.com/contact",
+    "url": "https://naveenautocomponents.com/contact",
     "description": "Contact Naveen Auto Components for heavy engineering metal fabrication RFQs, plant visits, and technical drawings review."
   };
 
   return (
     <>
       <SEO 
-        title="Contact Naveen Auto Components - Chennai & Cuddalore Fabrication Units"
-        description="Contact Naveen Auto Components (NAC) for heavy engineering inquiries. Administrative office in Ambattur, Chennai with manufacturing units in Kattur & Cuddalore."
+        title="Contact Naveen Auto Components | Heavy Fabrication Quotes & RFQ"
+        description="Contact Naveen Auto Components (naveenautocomponents.com) for heavy engineering inquiries, RFQ proposals, and plant visits in Chennai & Cuddalore."
+        keywords="Contact Naveen Auto Components, naveenautocomponents.com contact, heavy fabrication RFQ Chennai, quotation Cuddalore plant, NAC contact email"
         canonical="/contact"
         schema={contactSchema}
       />

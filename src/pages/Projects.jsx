@@ -26,14 +26,16 @@ export const Projects = () => {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
     "name": "Naveen Auto Components Project Showcase",
+    "url": "https://naveenautocomponents.com/projects",
     "description": "Exemplary heavy engineering fabrication projects for ENEXIO, C. Doctor, Airflow, IRG, Enviro Engineering, and OLG."
   };
 
   return (
     <>
       <SEO 
-        title="Heavy Fabrication Projects Gallery in Chennai and Cuddalore | NAC"
-        description="Explore executed project references for Heavy Fabrication in Chennai and Cuddalore: rail coach folding, consent-state pressure vessels, header pipes, air blowers, & structural fan guards."
+        title="Fabrication Projects & Portfolio | Naveen Auto Components"
+        description="Browse heavy engineering fabrication projects executed by Naveen Auto Components (naveenautocomponents.com) for Airflow, C.Doctor, Enexio, and OLG."
+        keywords="naveenautocomponents.com, Naveen Auto Components projects, storage tank portfolio, steam duct projects, PEB structural steelwork projects, NAC case studies"
         canonical="/projects"
         schema={projectsSchema}
       />

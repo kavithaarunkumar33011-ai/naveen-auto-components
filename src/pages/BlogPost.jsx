@@ -18,7 +18,7 @@ export const BlogPost = () => {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.seoDesc,
-    "image": `https://www.naveenauto.com${post.image}`,
+    "image": `https://naveenautocomponents.com${post.image}`,
     "author": {
       "@type": "Organization",
       "name": "Naveen Auto Components"
@@ -28,7 +28,7 @@ export const BlogPost = () => {
       "name": "Naveen Auto Components",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.naveenauto.com/images/logos/nac-logo-white-chennai.webp"
+        "url": "https://naveenautocomponents.com/images/logos/nac-logo-white-chennai.webp"
       }
     },
     "datePublished": "2026-08-28"
@@ -37,8 +37,9 @@ export const BlogPost = () => {
   return (
     <>
       <SEO 
-        title={post.seoTitle}
+        title={`${post.seoTitle} | Naveen Auto Components`}
         description={post.seoDesc}
+        keywords={`naveenautocomponents.com, Naveen Auto Components blog, ${post.title}, heavy engineering fabrication`}
         canonical={`/blog/${post.slug}`}
         schema={postSchema}
       />

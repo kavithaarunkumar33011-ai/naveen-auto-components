@@ -15,15 +15,16 @@ export const ServicesHub = () => {
       "@type": "ListItem",
       "position": idx + 1,
       "name": svc.title,
-      "url": `https://www.naveenauto.com/services/${svc.slug}`
+      "url": `https://naveenautocomponents.com/services/${svc.slug}`
     }))
   };
 
   return (
     <>
       <SEO 
-        title="Fabrication Products - Storage Tanks, PEB Structure, Duct Pipe Line & Rail Coach Parts | NAC"
-        description="Fabrication Products by Naveen Auto Components (NAC): Storage Tanks, PEB Structures, Steam Distribution Pipeline Ducts, Header Pipeline, Rail Coach Parts, Air Duct & Bins."
+        title="Metal Fabrication Products & Solutions | Naveen Auto Components"
+        description="Fabrication products by Naveen Auto Components (naveenautocomponents.com): Storage Tanks, Steam Distribution Ducts, PEB Structural Steel, Rail & Bus Coach Parts, Air Blowers & Bins in Chennai & Cuddalore."
+        keywords="naveenautocomponents.com, Naveen Auto Components products, storage tank fabrication, steam duct pipeline, PEB structural steelwork, rail coach components Chennai, industrial air blowers Cuddalore"
         canonical="/services"
         schema={servicesHubSchema}
       />

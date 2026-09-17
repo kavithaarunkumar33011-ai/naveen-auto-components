@@ -12,7 +12,7 @@ export const Home = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Naveen Auto Components",
-    "url": "https://www.naveenauto.com",
+    "url": "https://naveenautocomponents.com",
     "description": companyData.about
   };
 
@@ -28,8 +28,9 @@ export const Home = () => {
   return (
     <>
       <SEO 
-        title="Naveen Auto Components | Heavy Fabrication, Storage Tanks & PEB Structural Works in Chennai & Cuddalore"
-        description="Naveen Auto Components (NAC) - ISO 9001:2015 certified heavy fabrication company with 2 units in Chennai & Cuddalore. Specializing in Storage Tank, Steam Distribution Duct, Header Pipeline, PEB Structural Fabrication, Rail Coach Components, Air Duct & Material Handling Bins."
+        title="Naveen Auto Components | Heavy Engineering Fabrication & Storage Tanks Chennai Cuddalore"
+        description="Naveen Auto Components (naveenautocomponents.com) - ISO 9001:2015 certified heavy engineering fabrication company with 2 units in Chennai & Cuddalore. Specializing in Storage Tanks, Steam Distribution Ducts, PEB Structural Fabrication & Rail Coach Parts."
+        keywords="naveenautocomponents.com, Naveen Auto Components, NAC Chennai, heavy engineering fabrication Chennai, heavy fabrication Cuddalore, storage tank manufacturer Tamil Nadu, PEB structural fabrication, steam distribution duct"
         canonical="/"
         schema={homeSchema}
       />
@@ -77,8 +78,12 @@ export const Home = () => {
               <Card className="h-100 border-0 shadow-sm rounded-4 p-4 bg-light border-top border-warning border-4">
                 <Card.Body>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-navy text-white rounded-circle p-3 me-3 d-flex align-items-center justify-content-center" style={{ width: '54px', height: '54px', backgroundColor: '#0b1e36' }}>
-                      <i className="bi bi-cpu-fill fs-4 text-warning"></i>
+                    <div className="bg-white rounded-circle p-2 me-3 d-flex align-items-center justify-content-center shadow-sm border border-light" style={{ width: '54px', height: '54px' }}>
+                      <img 
+                        src="/images/logos/varsha-technologies-logo.svg" 
+                        alt="Varsha Technologies Logo" 
+                        style={{ maxHeight: '38px', maxWidth: '38px', objectFit: 'contain' }} 
+                      />
                     </div>
                     <div>
                       <h3 className="h5 fw-bold text-navy mb-0">Varsha Technologies</h3>
@@ -96,8 +101,12 @@ export const Home = () => {
               <Card className="h-100 border-0 shadow-sm rounded-4 p-4 bg-light border-top border-warning border-4">
                 <Card.Body>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-navy text-white rounded-circle p-3 me-3 d-flex align-items-center justify-content-center" style={{ width: '54px', height: '54px', backgroundColor: '#0b1e36' }}>
-                      <i className="bi bi-building-gear fs-4 text-warning"></i>
+                    <div className="bg-navy rounded-circle p-2 me-3 d-flex align-items-center justify-content-center shadow-sm" style={{ width: '54px', height: '54px', backgroundColor: '#0b1e36' }}>
+                      <img 
+                        src="/images/logos/nac-logo-white-brand.webp" 
+                        alt="Naveen Auto Components (NAC) White Logo" 
+                        style={{ maxHeight: '38px', maxWidth: '38px', objectFit: 'contain' }} 
+                      />
                     </div>
                     <div>
                       <h3 className="h5 fw-bold text-navy mb-0">Naveen Auto Components (NAC)</h3>
@@ -139,16 +148,16 @@ export const Home = () => {
           <Row className="align-items-center g-5">
             <Col lg={6}>
               <Badge bg="warning" className="text-navy fw-bold px-3 py-2 text-uppercase mb-3" style={{ backgroundColor: '#f57c00', color: '#fff' }}>
-                About Naveen Auto Components
+                ISO 9001:2015 Certified Manufacturing
               </Badge>
               <h2 className="display-6 fw-bold text-navy mb-4">
-                Heavy Engineering & Turnkey Metal Fabrication
+                About Naveen Auto Components
               </h2>
-              <p className="lead text-secondary mb-4" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-                Established in 2000, <strong>Naveen Auto Components (NAC)</strong> is a premier ISO 9001:2015 certified manufacturer specializing in heavy engineering, structural steelwork, storage tanks, and industrial process piping.
+              <p className="lead text-secondary mb-3" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                <strong>Naveen Auto Components</strong> is a One-Stop Heavy Engineering & Processing Equipment Manufacturing and Fabrication Industry based at SIDCO Women’s Industrial Park, Kattur, Chennai and Cuddalore-Chidambaram Road, Chidambaram.
               </p>
-              <p className="text-muted mb-4" style={{ lineHeight: '1.7' }}>
-                With over 350,000 sq. ft. across two plants in Chennai & Cuddalore, 1500+ MT monthly processing capacity, 6kW CNC Fiber Laser cutting, 16mm plate rolling, and 10 MT EOT cranes, NAC delivers complete end-to-end heavy fabrication solutions across India.
+              <p className="text-muted mb-4" style={{ lineHeight: '1.75' }}>
+                Specializing in Storage Tanks for water & condensate, Steam Distribution Pipeline Duct, Header Pipelines, PEB Structural Fabrication and Rail & Bus Coach Components - we are an ISO 9001:2015 Certified company specializing in Ferrous & Non-Ferrous Metal Fabrication for Industrial Process Equipment and Special Purpose Equipment.
               </p>
               <div className="d-flex flex-wrap gap-3">
                 <Button as={Link} to="/about" variant="warning" size="lg" className="fw-bold px-4 py-3 shadow" style={{ backgroundColor: '#f57c00', borderColor: '#f57c00', color: '#fff' }}>

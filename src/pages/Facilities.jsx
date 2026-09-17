@@ -21,14 +21,16 @@ export const Facilities = () => {
     "@context": "https://schema.org",
     "@type": "Place",
     "name": "Naveen Auto Components Manufacturing Plants",
+    "url": "https://naveenautocomponents.com/facilities",
     "description": "State-of-the-art CNC Laser Cutting, CNC Press Brake, 16mm Rolling Machine, 10 MT EOT Crane, and 22,500 sq.ft open yard facilities across Chennai and Cuddalore."
   };
 
   return (
     <>
       <SEO 
-        title="Machinery & Infrastructure for Heavy Fabrication in Chennai and Cuddalore"
-        description="State-of-the-art infrastructure for Heavy Fabrication in Chennai and Cuddalore: 6kW CNC laser cutter, 8m press brake, 16mm rolling machine, 10 MT crane & 2.5 acre Cuddalore plant."
+        title="Manufacturing Infrastructure & Facilities | Naveen Auto Components"
+        description="Naveen Auto Components (naveenautocomponents.com) manufacturing plants in Chennai & Cuddalore: 6kW CNC laser cutter, 8m press brake, 16mm plate rolling, 10 MT crane & 2.5 acre yard."
+        keywords="naveenautocomponents.com, Naveen Auto Components facilities, CNC laser cutting Chennai, plate rolling machine Cuddalore, heavy fabrication plant Tamil Nadu, NAC machinery"
         canonical="/facilities"
         schema={facilitiesSchema}
       />

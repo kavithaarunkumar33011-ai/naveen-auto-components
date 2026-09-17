@@ -1,14 +1,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-export const SEO = ({ title, description, canonical, schema, image }) => {
-  const siteUrl = 'https://www.naveenauto.com';
+export const SEO = ({ title, description, canonical, schema, image, keywords }) => {
+  const siteUrl = 'https://naveenautocomponents.com';
   const fullTitle = title
     ? `${title}`
-    : 'Naveen Auto Components | Heavy Engineering & Fabrication Chennai';
+    : 'Naveen Auto Components | Heavy Engineering & Fabrication Chennai Cuddalore';
   const metaDescription =
     description ||
-    'ISO 9001:2015 certified heavy engineering fabrication company in Chennai & Cuddalore. Storage tanks, steam pipeline ducts, PEB structural fabrication, rail/bus coach parts, and air blowers.';
+    'Naveen Auto Components (naveenautocomponents.com) - ISO 9001:2015 certified heavy engineering fabrication company in Chennai & Cuddalore. Storage tanks, steam pipeline ducts, PEB structural fabrication, rail/bus coach parts, and air blowers.';
+  
+  const defaultKeywords = 'Naveen Auto Components, naveenautocomponents.com, NAC Chennai, heavy engineering fabrication Chennai, heavy fabrication Cuddalore, storage tank manufacturer Tamil Nadu, PEB structural fabrication, steam distribution duct, pressure vessels India, ISO 9001:2015 metal fabrication';
+  const metaKeywords = keywords ? `${keywords}, ${defaultKeywords}` : defaultKeywords;
+
   const currentCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
   const metaImage = image ? (image.startsWith('http') ? image : `${siteUrl}${image}`) : `${siteUrl}/images/logos/nac-logo-white-chennai.webp`;
 
@@ -91,6 +95,7 @@ export const SEO = ({ title, description, canonical, schema, image }) => {
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={metaDescription} />
+      <meta name="keywords" content={metaKeywords} />
       <link rel="canonical" href={currentCanonical} />
 
       {/* Open Graph */}
