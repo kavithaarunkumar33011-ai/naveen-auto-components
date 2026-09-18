@@ -59,24 +59,24 @@ export const infrastructureData = [
   {
     title: "10 MT EOT Overhead Crane",
     capacity: "10 Metric Ton Lifting Capacity",
-    location: "Unit 1 Closed Shed (Chennai)",
+    location: "Unit 1 Covered Shed (Chennai)",
     details: "Enables safe, smooth indoor maneuverability and overhead assembly of heavy pressure vessels and large structural beams."
   },
   {
-    title: "10,000 Sq.Ft Covered Shed",
-    capacity: "Weatherproof Heavy Workshop",
+    title: "~3,000 Sq.Ft Covered Factory Shed",
+    capacity: "Weatherproof Heavy Workshop Shed",
     location: "Unit 1 (Chennai)",
-    details: "Fully covered assembly floor equipped with high-amperage power outlets, crane rails, and precision fit-up tables."
+    details: "Covered assembly floor equipped with high-amperage power outlets, crane rails, and precision fit-up tables."
   },
   {
-    title: "22,500 Sq.Ft Total Open Yard",
-    capacity: "10,000 sq.ft (Chennai) + 12,500 sq.ft (Cuddalore)",
-    location: "Chennai & Cuddalore Units",
-    details: "Spacious open yards for raw material staging, shot blasting, protective spray painting, and flatbed truck loading."
+    title: "1 Lakh Sq.Ft Total Open Space",
+    capacity: "1,00,000 Sq.Ft Open Space Across 3 Locations",
+    location: "Ambattur, Thirumullaivoyal & Cuddalore Units",
+    details: "Spacious open yards across 3 locations for raw material staging, shot blasting, protective spray painting, and flatbed truck loading."
   },
   {
-    title: "2.5 Acre Integrated Manufacturing Facility",
-    capacity: "2.5 Acres Total Plot Area",
+    title: "Cuddalore Heavy Manufacturing Unit",
+    capacity: "Heavy Fabrication Yard (NH-32)",
     location: "Unit 2 (Cuddalore, NH-32)",
     details: "Strategic highway access for oversized equipment transport, heavy pipe rolling, and structural frame fit-ups."
   }

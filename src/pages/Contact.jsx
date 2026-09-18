@@ -141,9 +141,22 @@ export const Contact = () => {
         <Container>
           <div className="text-center max-w-700 mx-auto mb-5">
             <h2 className="display-6 fw-bold text-navy mb-3">Plant & Facility Map Locations</h2>
-            <p className="text-secondary lead">
+            <p className="text-secondary lead mb-3">
               Visit our corporate office or dual manufacturing yards in Chennai and Cuddalore.
             </p>
+            <div>
+              <a 
+                href={companyData.googleShareLink || 'https://share.google/U57zAGwxO9ujDK0uy'} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-warning fw-bold px-4 py-2 shadow-sm text-navy d-inline-flex align-items-center gap-2"
+                style={{ backgroundColor: '#f57c00', borderColor: '#f57c00', color: '#fff' }}
+              >
+                <i className="bi bi-google fs-5"></i>
+                <span>View & Review on Google Business Profile</span>
+                <i className="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
           </div>
 
           <Row className="g-4">

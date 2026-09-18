@@ -82,10 +82,10 @@ export const About = () => {
 
               <div className="p-4 rounded-3 bg-light border-start border-warning border-4 mb-4 shadow-sm">
                 <h3 className="h6 fw-bold text-navy mb-2">
-                  <i className="bi bi-geo-alt-fill text-warning me-2" style={{ color: '#f57c00' }}></i> Corporate Offices & Dual Manufacturing Facilities
+                  <i className="bi bi-geo-alt-fill text-warning me-2" style={{ color: '#f57c00' }}></i> Corporate Offices & 3 Locations Network
                 </h3>
                 <p className="small text-secondary mb-0" style={{ lineHeight: '1.75' }}>
-                  Headquartered at <strong>No-T93, SIDCO Women Industrial Park, Kattur, Thirumullaivoyal, Chennai - 600062</strong> with our office at Ambattur Industrial Estate and a sprawling <strong>2.5 Acre fabrication unit at Cuddalore-Chidambaram Road (NH-32), Kotthattai Village, Chidambaram - 608501</strong>, we are committed to producing & meeting customer satisfaction, Deliver On-Time and at economical prices.
+                  Headquartered at <strong>No-T93, SIDCO Women Industrial Park, Kattur, Thirumullaivoyal, Chennai - 600062</strong> with our Registered Office at <strong>Ambattur Industrial Estate</strong> and a fabrication unit on <strong>Cuddalore-Chidambaram Road (NH-32), Kotthattai Village, Chidambaram - 608501</strong>, offering <strong>~3,000 Sq.Ft</strong> covered factory area and <strong>1 Lakh Sq.Ft</strong> total open space across all 3 locations, we are committed to producing & meeting customer satisfaction, Deliver On-Time and at economical prices.
                 </p>
               </div>
 
@@ -125,7 +125,7 @@ export const About = () => {
                       "Hydraulic Press Brake - 8mm x 2500mm",
                       "Plate Rolling Machine - 16mm x 2500mm",
                       "MIG Welding & TIG Welding Infrastructure",
-                      "Open Fabrication Area - 10,000 + 12,500 Sq Ft"
+                      "Open Space Area - 1 Lakh Sq Ft (Across 3 Locations)"
                     ].map((facility, idx) => (
                       <Col key={idx} md={6}>
                         <div className="d-flex align-items-center py-1">
@@ -136,9 +136,9 @@ export const About = () => {
                     ))}
                   </Row>
                   <div className="mt-3 pt-3 border-top border-secondary-subtle">
-                    <span className="badge bg-navy text-warning font-monospace p-2 mb-1" style={{ backgroundColor: '#0b1e36', color: '#f57c00' }}>Future Expansion</span>
+                    <span className="badge bg-navy text-warning font-monospace p-2 mb-1" style={{ backgroundColor: '#0b1e36', color: '#f57c00' }}>Factory Infrastructure</span>
                     <p className="small text-muted mb-0">
-                      10,000 Sq Ft Closed Shed with 10 MT EOT Crane, CNC Laser Cutting 6kW (2.5m x 6.5m), CNC Press Brake 8 x 3.2M.
+                      ~3,000 Sq Ft Covered Shed with 10 MT EOT Crane, CNC Laser Cutting 6kW (2.5m x 6.5m), CNC Press Brake 8 x 3.2M.
                     </p>
                   </div>
                 </Card>

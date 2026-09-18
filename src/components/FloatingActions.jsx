@@ -59,6 +59,12 @@ export const FloatingActions = () => {
             color: #fff;
             box-shadow: 0 6px 20px rgba(0,0,0,0.4);
           }
+          .btn-google {
+            background-color: #ea4335;
+          }
+          .btn-google:hover {
+            background-color: #d93025;
+          }
           .btn-whatsapp {
             background-color: #25d366;
           }
@@ -106,6 +112,11 @@ export const FloatingActions = () => {
       </style>
 
       <div className="floating-actions-container">
+        {/* Google Business Profile Button */}
+        <a href={companyData.googleShareLink || 'https://share.google/U57zAGwxO9ujDK0uy'} target="_blank" rel="noopener noreferrer" className="floating-btn btn-google" title="Google Business Profile & Reviews" aria-label="Google Business Profile & Reviews">
+          <i className="bi bi-google"></i>
+        </a>
+
         {/* Telephone Button */}
         <a href={`tel:${displayPhone}`} className="floating-btn btn-phone" title="Call Us" aria-label="Call Us">
           <i className="bi bi-telephone-fill"></i>

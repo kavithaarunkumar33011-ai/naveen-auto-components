@@ -18,8 +18,13 @@ export const TopBar = () => {
           <a href={`tel:${companyData.contact.mobile}`} className="text-white-50 text-decoration-none fw-bold text-white hover-text-warning me-3">
             <i className="bi bi-phone-fill me-1 text-warning"></i> {companyData.contact.mobile}
           </a>
-          {/* Social Links */}
+          {/* Social & Google Profile Links */}
           <div className="ms-2 ps-3 border-start border-secondary d-flex gap-2">
+            {companyData.social?.googleBusiness && (
+              <a href={companyData.social.googleBusiness} target="_blank" rel="noopener noreferrer" className="social-icon-topbar social-icon-google text-warning" aria-label="Google Business Profile" title="Find us on Google">
+                <i className="bi bi-google"></i>
+              </a>
+            )}
             {companyData.social?.facebook && (
               <a href={companyData.social.facebook} target="_blank" rel="noopener noreferrer" className="social-icon-topbar social-icon-facebook" aria-label="Facebook">
                 <i className="bi bi-facebook"></i>

@@ -25,6 +25,14 @@ export const SEO = ({ title, description, canonical, schema, image, keywords }) 
     "alternateName": "NAC",
     "image": `${siteUrl}/images/logos/nac-logo-white-chennai.webp`,
     "url": "https://naveenautocomponents.com/",
+    "hasMap": "https://share.google/U57zAGwxO9ujDK0uy",
+    "sameAs": [
+      "https://share.google/U57zAGwxO9ujDK0uy",
+      "https://www.linkedin.com/company/naveen-auto-components/",
+      "https://www.facebook.com/naveenautocomponents",
+      "https://twitter.com/naveenauto",
+      "https://www.instagram.com/naveenautocomponents"
+    ],
     "telephone": "+91-44-26360415",
     "email": "naveenauto2017@gmail.com",
     "priceRange": "$$$",

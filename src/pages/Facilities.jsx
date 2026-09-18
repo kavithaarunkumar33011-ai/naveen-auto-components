@@ -22,14 +22,14 @@ export const Facilities = () => {
     "@type": "Place",
     "name": "Naveen Auto Components Manufacturing Plants",
     "url": "https://naveenautocomponents.com/facilities",
-    "description": "State-of-the-art CNC Laser Cutting, CNC Press Brake, 16mm Rolling Machine, 10 MT EOT Crane, and 22,500 sq.ft open yard facilities across Chennai and Cuddalore."
+    "description": "State-of-the-art CNC Laser Cutting, CNC Press Brake, 16mm Rolling Machine, 10 MT EOT Crane, ~3,000 sq.ft factory covered area, and 1 Lakh sq.ft open space across 3 locations."
   };
 
   return (
     <>
       <SEO 
         title="Manufacturing Infrastructure & Facilities | Naveen Auto Components"
-        description="Naveen Auto Components (naveenautocomponents.com) manufacturing plants in Chennai & Cuddalore: 6kW CNC laser cutter, 8m press brake, 16mm plate rolling, 10 MT crane & 2.5 acre yard."
+        description="Naveen Auto Components (naveenautocomponents.com) manufacturing infrastructure across 3 locations in Chennai & Cuddalore: 6kW CNC laser cutter, press brake, 16mm plate rolling, 10 MT crane & 1 Lakh sq ft open space."
         keywords="naveenautocomponents.com, Naveen Auto Components facilities, CNC laser cutting Chennai, plate rolling machine Cuddalore, heavy fabrication plant Tamil Nadu, NAC machinery"
         canonical="/facilities"
         schema={facilitiesSchema}
@@ -49,9 +49,9 @@ export const Facilities = () => {
             <Badge bg="warning" className="text-navy fw-bold px-3 py-2 text-uppercase mb-2" style={{ backgroundColor: '#f57c00' }}>
               Strategic Manufacturing Footprint
             </Badge>
-            <h2 className="display-6 fw-bold text-navy mb-3">Dual Manufacturing Facilities for Heavy Fabrication in Chennai and Cuddalore</h2>
+            <h2 className="display-6 fw-bold text-navy mb-3">3 Locations Network for Heavy Fabrication in Chennai and Cuddalore</h2>
             <p className="text-secondary lead">
-              Two specialized fabrication units strategically positioned in Tamil Nadu for optimal regional supply chains. Click any image to view in full page with zoom.
+              Three strategic locations in Tamil Nadu (Ambattur Registered Office, Thirumullaivoyal Unit 1, and Cuddalore Unit 2) for optimal regional supply chains. Click any image to view in full page with zoom.
             </p>
           </div>
 
@@ -92,9 +92,9 @@ export const Facilities = () => {
                     </div>
                   </div>
                   <ul className="list-unstyled text-secondary small mb-0 pt-3 border-top">
-                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 10,000 Sq.Ft Covered Assembly Shed</li>
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> ~3,000 Sq.Ft Covered Assembly Shed</li>
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 10 MT Overhead EOT Crane Rigging</li>
-                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 10,000 Sq.Ft Open Fabrication Yard</li>
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 1 Lakh Sq.Ft Total Open Space (3 Locations)</li>
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> High-Speed CNC Laser & Press Brake Setup</li>
                   </ul>
                 </Card.Body>
@@ -137,8 +137,8 @@ export const Facilities = () => {
                     </div>
                   </div>
                   <ul className="list-unstyled text-secondary small mb-0 pt-3 border-top">
-                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> Total Plot Area: 2.5 Acres</li>
-                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 12,500 Sq.Ft Open Storage & Blasting Yard</li>
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> Heavy Structural Fabrication Facility</li>
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 1 Lakh Sq.Ft Total Open Space Across 3 Locations</li>
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> Heavy 16mm Plate Rolling & Header Pipe Assembly</li>
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> Direct Highway Access for Oversized Flatbeds</li>
                   </ul>
@@ -224,7 +224,7 @@ export const Facilities = () => {
                     </Badge>
                     <h3 className="h4 fw-bold text-navy mb-3">10 MT Overhead EOT Crane & Open Yards</h3>
                     <p className="text-secondary mb-0" style={{ lineHeight: '1.6' }}>
-                      Unit 1 features a 10,000 sq.ft covered shed with a <strong>10 MT EOT crane</strong>. Unit 2 in Cuddalore spans <strong>2.5 acres</strong> with a 12,500 sq.ft open yard for large diameter pipe rolling.
+                      Unit 1 features a ~3,000 sq.ft covered factory shed with a <strong>10 MT EOT crane</strong>. Across all 3 locations in Chennai & Cuddalore, NAC provides <strong>1 Lakh sq.ft total open space</strong> for heavy vessel fit-up, plate rolling, and flatbed loading.
                     </p>
                   </div>
                 </Card.Body>

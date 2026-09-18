@@ -44,7 +44,7 @@ When issuing Requests for Quotation (RFQ) for storage tank Heavy Fabrication in 
 
 - **Volume & Shell Dimensions**: Ensure shell rolling capacities match tank diameter requirements (up to 16mm plate rolling at Naveen Auto Components).
 - **Overhead Handling Logistics**: Verify factory EOT crane capacities (e.g., our **10 MT overhead EOT crane**) to ensure safe vessel maneuvering.
-- **On-Site Staging Space**: Large tanks require expansive open yards (e.g., our **22,500 sq.ft combined open yards**) for pre-shipment staging and flatbed loading.
+- **On-Site Staging Space**: Large tanks require expansive open space (e.g., our **1 Lakh sq.ft total open space across 3 locations**) for pre-shipment staging and flatbed loading.
 
 ---
 
@@ -136,7 +136,7 @@ Our engineering team at Ambattur, Thirumullaivoyal, and Cuddalore reviews CAD dr
 ## Frequently Asked Questions (FAQ)
 
 ### What facility capacities support PEB structural steel projects?
-We operate a **2.5-acre plant in Cuddalore** alongside our **Chennai unit**, providing a combined **22,500 sq.ft open yard** for large-scale **PEB structural Heavy Fabrication in Chennai and Cuddalore**.
+We operate across **3 strategic locations** in Chennai and Cuddalore, providing a combined **1 Lakh sq.ft total open space** for large-scale **PEB structural Heavy Fabrication in Chennai and Cuddalore**.
 
 ### What cutting precision is achieved for structural gussets and plates?
 Our **6kW CNC Fiber Laser Cutter** (2.5m x 6.5m bed) cuts heavy steel plates with precision tolerances under **±0.1mm**.

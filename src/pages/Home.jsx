@@ -42,10 +42,10 @@ export const Home = () => {
         <Container>
           <Row className="text-center g-4">
             {[
-              { label: "Year Established", value: "2000" },
-              { label: "Manufacturing Area", value: "350k+ Sq Ft (2 Units)" },
-              { label: "Installed Capacity", value: "1500+ MT/Month" },
-              { label: "Quality Certification", value: "ISO 9001:2015" }
+              { label: "Year Established", value: "2017" },
+              { label: "Factory Covered Area", value: "~3,000 Sq Ft" },
+              { label: "Monthly / Yearly Capacity", value: "60 Tons / 300-400 Tons" },
+              { label: "Total Open Space", value: "1 Lakh Sq Ft (3 Locations)" }
             ].map((stat, idx) => (
               <Col md={3} sm={6} key={idx}>
                 <div className="stat-box py-2">
@@ -66,10 +66,10 @@ export const Home = () => {
               ISO 9001:2015 Certified Precision Manufacturing
             </Badge>
             <h2 className="display-6 fw-bold text-navy mb-4">
-              Our 2 Manufacturing Units in Chennai & Cuddalore
+              Our 3 Locations Footprint in Chennai & Cuddalore
             </h2>
             <p className="lead text-secondary mx-auto max-w-800" style={{ fontSize: '1.15rem', lineHeight: '1.8' }}>
-              Established in 2000, <strong>Varsha Technologies</strong> and <strong>Naveen Auto Components (NAC)</strong> operate <strong>2 manufacturing units</strong> across <strong>Chennai</strong> and <strong>Cuddalore</strong> (2.5 Acres, NH-32), delivering ISO 9001:2015 certified heavy engineering metal fabrication.
+              Established in 2017, <strong>Naveen Auto Components (NAC)</strong> operates across <strong>3 locations</strong> in <strong>Chennai</strong> (Ambattur Registered Office & SIDCO Kattur Unit 1) and <strong>Cuddalore</strong> (Unit 2, NH-32), featuring <strong>~3,000 Sq.Ft</strong> covered factory area and <strong>1 Lakh Sq.Ft</strong> total open space for ISO 9001:2015 certified heavy engineering metal fabrication.
             </p>
           </div>
 
@@ -110,11 +110,11 @@ export const Home = () => {
                     </div>
                     <div>
                       <h3 className="h5 fw-bold text-navy mb-0">Naveen Auto Components (NAC)</h3>
-                      <span className="small text-muted font-monospace">Est. 2010 • ISO 9001:2015 Certified</span>
+                      <span className="small text-muted font-monospace">Est. 2017 • ISO 9001:2015 Certified</span>
                     </div>
                   </div>
                   <p className="small text-secondary mb-0" style={{ lineHeight: '1.7' }}>
-                    Expanded in 2010 as your turnkey one-stop solution for heavy ferrous & non-ferrous fabrication, industrial process equipment, PEB structures, pipeline ducts, and storage tanks.
+                    Established in 2017 as your turnkey one-stop solution for heavy ferrous & non-ferrous fabrication, industrial process equipment, PEB structures, pipeline ducts, and storage tanks.
                   </p>
                 </Card.Body>
               </Card>
@@ -128,13 +128,23 @@ export const Home = () => {
                       <i className="bi bi-geo-alt-fill fs-4 text-white"></i>
                     </div>
                     <div>
-                      <h3 className="h5 fw-bold text-white mb-0">Dual Manufacturing Footprint</h3>
-                      <span className="small text-warning font-monospace">2 Units: Chennai & Cuddalore</span>
+                      <h3 className="h5 fw-bold text-white mb-0">3 Strategic Locations</h3>
+                      <span className="small text-warning font-monospace">Ambattur, Thirumullaivoyal & Cuddalore</span>
                     </div>
                   </div>
-                  <p className="small text-white-50 mb-0" style={{ lineHeight: '1.7' }}>
-                    Operating 2 manufacturing units in <strong>Chennai (SIDCO Kattur)</strong> and <strong>Cuddalore (2.5 Acres, NH-32)</strong> equipped with advanced CNC laser cutters, 16mm plate rolling, and ISO 9001:2015 quality management.
+                  <p className="small text-white-50 mb-3" style={{ lineHeight: '1.7' }}>
+                    Operating across 3 locations in <strong>Ambattur Registered Office</strong>, <strong>Thirumullaivoyal (Unit 1)</strong>, and <strong>Cuddalore (Unit 2, NH-32)</strong> featuring ~3,000 Sq.Ft factory area and 1 Lakh Sq.Ft total open space.
                   </p>
+                  <a 
+                    href={companyData.googleShareLink || 'https://share.google/U57zAGwxO9ujDK0uy'} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-outline-warning btn-sm fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <i className="bi bi-google"></i>
+                    <span>Google Business Profile</span>
+                    <i className="bi bi-box-arrow-up-right fs-8"></i>
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
@@ -394,7 +404,7 @@ export const Home = () => {
                 </div>
                 <h3 className="h5 fw-bold text-white mb-2">We Deliver</h3>
                 <p className="small text-white-50 mb-0" style={{ lineHeight: '1.7' }}>
-                  10 MT EOT crane maneuvering, 22,500 sq.ft open staging yards, and 100% on-time dispatch logistics across India.
+                  10 MT EOT crane maneuvering, 1 Lakh sq.ft total open space across 3 locations, and 100% on-time dispatch logistics across India.
                 </p>
               </div>
             </Col>

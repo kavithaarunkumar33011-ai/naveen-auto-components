@@ -24,14 +24,14 @@ export const Footer = () => {
               <h5 className="fw-bold text-white mb-0">{companyData.name} (NAC)</h5>
             </div>
             <p className="text-white-50 small mb-3">
-              One-Stop Manufacturing Industry for Ferrous and Non-Ferrous Metal Fabrication. ISO 9001:2015 certified manufacturer with <strong>2 Manufacturing Units</strong> in Chennai & Cuddalore. Specializing in Storage Tanks, Steam Distribution Ducts, PEB Structures, Rail Coach Parts & Air Blower Systems.
+              One-Stop Manufacturing Industry for Ferrous and Non-Ferrous Metal Fabrication. ISO 9001:2015 certified manufacturer operating across <strong>3 Locations</strong> in Chennai & Cuddalore (~3,000 Sq.Ft covered factory area, 1 Lakh Sq.Ft open space). Specializing in Storage Tanks, Steam Distribution Ducts, PEB Structures, Rail Coach Parts & Air Blower Systems.
             </p>
             <div className="p-3 bg-navy rounded border border-secondary mb-3" style={{ backgroundColor: '#0b1e36' }}>
               <div className="d-flex align-items-center">
                 <i className="bi bi-award-fill text-warning fs-3 me-3"></i>
                 <div>
-                  <h6 className="mb-0 text-white fw-bold">ISO 9001:2015 Certified • 2 Units</h6>
-                  <small className="text-white-50">Kattur, Chennai & Kotthattai, Cuddalore</small>
+                  <h6 className="mb-0 text-white fw-bold">ISO 9001:2015 Certified • 3 Locations</h6>
+                  <small className="text-white-50">Ambattur, Kattur (Chennai) & Kotthattai (Cuddalore)</small>
                 </div>
               </div>
             </div>
@@ -93,9 +93,14 @@ export const Footer = () => {
               </a>
             </div>
 
-            {/* Social Links */}
-            <h6 className="text-warning fw-bold mt-4 mb-3 text-uppercase fs-7">Follow Us</h6>
-            <div className="d-flex gap-3">
+            {/* Social Links & Google Profile */}
+            <h6 className="text-warning fw-bold mt-4 mb-3 text-uppercase fs-7">Connect & Follow Us</h6>
+            <div className="d-flex gap-3 align-items-center flex-wrap">
+              {companyData.social?.googleBusiness && (
+                <a href={companyData.social.googleBusiness} target="_blank" rel="noopener noreferrer" className="social-icon-animated social-icon-google bg-warning text-dark fw-bold" aria-label="Google Business Profile" title="Google Business Profile">
+                  <i className="bi bi-google"></i>
+                </a>
+              )}
               {companyData.social?.facebook && (
                 <a href={companyData.social.facebook} target="_blank" rel="noopener noreferrer" className="social-icon-animated social-icon-facebook" aria-label="Facebook">
                   <i className="bi bi-facebook"></i>
@@ -118,6 +123,20 @@ export const Footer = () => {
               )}
             </div>
 
+            <div className="mt-3">
+              <a 
+                href={companyData.googleShareLink} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-outline-warning btn-sm fw-bold d-inline-flex align-items-center gap-2"
+                style={{ fontSize: '0.8rem' }}
+              >
+                <i className="bi bi-google text-warning"></i>
+                <span>Google Business Profile</span>
+                <i className="bi bi-box-arrow-up-right fs-8 ms-1"></i>
+              </a>
+            </div>
+
             <hr className="border-secondary my-3" />
             <div className="small" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
               <span className="text-white fw-semibold d-block mb-1"><i className="bi bi-building me-1 text-warning"></i> Administrative Office:</span>
@@ -127,18 +146,30 @@ export const Footer = () => {
         </Row>
 
         {/* Location Addresses Strip */}
-        <Row className="g-3 py-3 border-top border-secondary bg-navy-dark rounded px-2" style={{ backgroundColor: '#050f1c' }} data-aos="fade-up" data-aos-offset="0">
-          <Col md={6}>
+        <Row className="g-3 py-3 border-top border-secondary bg-navy-dark rounded px-2 align-items-center" style={{ backgroundColor: '#050f1c' }} data-aos="fade-up" data-aos-offset="0">
+          <Col md={5}>
             <div className="small" itemScope itemType="https://schema.org/ManufacturingFacility">
               <strong className="text-warning" itemProp="name"><i className="bi bi-geo-alt-fill me-1"></i> Factory 1 (Chennai Unit):</strong>
               <div className="text-white-50 mt-1" itemProp="address">No-T93, Sidco Women Industrial Park, Kattur, Thirumullaivoyal, Chennai - 600062</div>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={5}>
             <div className="small" itemScope itemType="https://schema.org/ManufacturingFacility">
               <strong className="text-warning" itemProp="name"><i className="bi bi-geo-alt-fill me-1"></i> Factory 2 (Cuddalore Unit - 2.5 Acres):</strong>
               <div className="text-white-50 mt-1" itemProp="address">No-94/2D, Cuddalore-Chidambaram Road, NH-32, Kotthattai Village, Chidambaram - 608501</div>
             </div>
+          </Col>
+          <Col md={2} className="text-md-end">
+            <a 
+              href={companyData.googleShareLink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-warning btn-sm fw-bold text-navy"
+              style={{ backgroundColor: '#f57c00', borderColor: '#f57c00', color: '#fff', fontSize: '0.8rem' }}
+              title="View Naveen Auto Components on Google"
+            >
+              <i className="bi bi-geo-alt me-1"></i> Google Map
+            </a>
           </Col>
         </Row>
 

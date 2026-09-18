@@ -10,7 +10,7 @@ export const companyData = {
     "Industrial air ducts & air blowers",
     "Heavy fabrication product handling & crane logistics"
   ],
-  about: "Naveen Auto Components is a trusted one-stop manufacturing company for Ferrous and Non-Ferrous metal fabrication. We specialize in industrial process equipment, PEB structural fabrication, industrial pipeline ducts, storage tanks, and special-purpose engineering equipment. Backed by state-of-the-art CNC machinery, dual manufacturing units in Chennai and Cuddalore, and strict ISO 9001:2015 quality management systems, we deliver precision heavy engineering solutions tailored to industrial clients across Tamil Nadu and South India.",
+  about: "Naveen Auto Components (Est. 2017) is a trusted one-stop manufacturing company for Ferrous and Non-Ferrous metal fabrication. We specialize in industrial process equipment, PEB structural fabrication, industrial pipeline ducts, storage tanks, and special-purpose engineering equipment. Backed by state-of-the-art CNC machinery, ~3,000 sq ft covered factory space, 1 Lakh sq ft open space across 3 locations in Chennai and Cuddalore, and strict ISO 9001:2015 quality management systems, we deliver precision heavy engineering solutions tailored to industrial clients across Tamil Nadu and South India.",
   qualityPolicy: "We are committed to manufacturing and delivering products that comply with customer satisfaction — right-quality fabricated products, prompt delivery, competitive pricing, and continual QMS improvement per ISO 9001:2015 standards.",
   qualityObjectives: [
     "100% Customer Satisfaction",
@@ -25,7 +25,9 @@ export const companyData = {
     mobile: "+91-9790942501",
     hours: "Monday – Saturday: 9:00 AM – 6:00 PM (Sunday Closed)"
   },
+  googleShareLink: "https://share.google/U57zAGwxO9ujDK0uy",
   social: {
+    googleBusiness: "https://share.google/U57zAGwxO9ujDK0uy",
     linkedin: "https://www.linkedin.com/company/naveen-auto-components/",
     facebook: "https://www.facebook.com/naveenautocomponents",
     twitter: "https://twitter.com/naveenauto",
@@ -41,13 +43,13 @@ export const companyData = {
     unit1: {
       title: "Fabrication Unit 1 (Chennai)",
       address: "No. T93, SIDCO Women's Industrial Park, Thirumullaivoyal, Tiruvallur District, Tamil Nadu – 600062",
-      highlights: "High-speed CNC Laser cutting, Press Brake, Shearing, Rolling & Closed Shed with 10 MT EOT Crane",
+      highlights: "High-speed CNC Laser cutting, Press Brake, Shearing, Rolling & ~3,000 Sq.Ft Factory Shed with 10 MT EOT Crane",
       mapEmbed: "https://maps.google.com/maps?q=SIDCO+Womens+Industrial+Park+Thirumullaivoyal+Chennai&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     unit2: {
       title: "Fabrication Unit 2 (Cuddalore)",
       address: "No. 94/2D, Cuddalore–Chidambaram Road (NH-32), Kotthattai Village, Chidambaram – 608501",
-      highlights: "Total Area: 2.5 Acres, Heavy structural & large diameter pipe rolling facility with expansive open yard",
+      highlights: "Heavy structural & large diameter pipe rolling facility with 1 Lakh Sq.Ft total open space across 3 locations",
       mapEmbed: "https://maps.google.com/maps?q=Kotthattai+Chidambaram+Tamil+Nadu&t=&z=15&ie=UTF8&iwloc=&output=embed"
     }
   },
@@ -86,11 +88,13 @@ export const companyData = {
     }
   ],
   stats: [
-    { value: "ISO 9001", label: "Quality Certified" },
-    { value: "2.5+ Acres", label: "Cuddalore Plant Area" },
-    { value: "22,500+", label: "Sq.Ft Open Yard Space" },
+    { value: "2017", label: "Year Established" },
+    { value: "60 Tons", label: "Monthly Capacity" },
+    { value: "300-400 Tons", label: "Yearly Capacity" },
+    { value: "~3,000 Sq.Ft", label: "Factory Covered Area" },
+    { value: "1 Lakh Sq.Ft", label: "Open Space (3 Locations)" },
     { value: "10 MT", label: "EOT Crane Capacity" },
-    { value: "6 kW", label: "CNC Laser Cutting Power" }
+    { value: "ISO 9001:2015", label: "Quality Certified" }
   ]
 };
 
