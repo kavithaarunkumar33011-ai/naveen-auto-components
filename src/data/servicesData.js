@@ -217,24 +217,31 @@ export const servicesData = [
     gallery: [
       {
         id: "heavy-handling-logistics-spec-1",
-        src: "/images/hd/services/heavy-fabrication-product-handling-logistics.jpeg",
-        alt: "Material Handling & Heat Treatment Bins Fabrication in Chennai Cuddalore - Naveen Auto Components",
+        src: "/images/hd/services/heavy-fabrication-product-handling-logistics-spec-1.webp",
+        alt: "Material Handling & Heavy Fabrication Product Logistics Spec 1 - Naveen Auto Components",
         title: "Heavy Product Handling & Logistics Spec 1",
         desc: "Overhead EOT crane maneuvering and heavy flatbed trailer loading at Chennai facility."
       },
       {
-        id: "heavy-handling-logistics-spec-9",
+        id: "heavy-handling-logistics-spec-2",
         src: "/images/hd/services/heavy-fabrication-logistics-spec-9.jpeg",
-        alt: "Heavy Fabrication Product Handling & Logistics - Spec 2 (9.jpeg)",
+        alt: "Heavy Fabrication Product Handling & Logistics - Spec 2",
         title: "Heavy Product Handling & Logistics Spec 2",
         desc: "Precision rigging, yard staging, and oversized vessel transport alignment."
       },
       {
-        id: "heavy-handling-logistics-spec-10",
+        id: "heavy-handling-logistics-spec-3",
         src: "/images/hd/services/heavy-fabrication-logistics-spec-10.jpeg",
-        alt: "Heavy Fabrication Product Handling & Logistics - Spec 3 (10.jpeg)",
+        alt: "Heavy Fabrication Product Handling & Logistics - Spec 3",
         title: "Heavy Product Handling & Logistics Spec 3",
         desc: "High-capacity overhead crane lifting and safe tie-down logistics for process plant dispatch."
+      },
+      {
+        id: "heavy-handling-logistics-spec-4",
+        src: "/images/hd/services/heavy-fabrication-product-handling-logistics-spec-4.webp",
+        alt: "Heat Treatment Bins & Material Handling Fabrication Spec 4 - Naveen Auto Components",
+        title: "Heat Treatment Bins & Material Handling Spec 4",
+        desc: "Heavy-duty heat treatment bins, industrial storage pallets, and high-temperature material handling containers."
       }
     ]
   }
