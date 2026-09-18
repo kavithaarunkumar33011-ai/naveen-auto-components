@@ -24,14 +24,14 @@ export const Footer = () => {
               <h5 className="fw-bold text-white mb-0">{companyData.name} (NAC)</h5>
             </div>
             <p className="text-white-50 small mb-3">
-              One-Stop Manufacturing Industry for Ferrous and Non-Ferrous Metal Fabrication. ISO 9001:2015 certified manufacturer operating across <strong>3 Locations</strong> in Chennai & Cuddalore (~3,000 Sq.Ft covered factory area, 1 Lakh Sq.Ft open space). Specializing in Storage Tanks, Steam Distribution Ducts, PEB Structures, Rail Coach Parts & Air Blower Systems.
+              One-Stop Manufacturing Industry for Ferrous and Non-Ferrous Metal Fabrication. ISO 9001:2015 certified manufacturer operating across <strong>2 Manufacturing Units</strong>: Thirumullaivoyal (Fabrication Unit-1) & Cuddalore (Fabrication Unit-2), supported by our Registered Office in Ambattur (~3,000 Sq.Ft covered factory area, 1 Lakh Sq.Ft open space). Specializing in Storage Tanks, Steam Distribution Ducts, PEB Structures, Rail Coach Parts & Air Blower Systems.
             </p>
             <div className="p-3 bg-navy rounded border border-secondary mb-3" style={{ backgroundColor: '#0b1e36' }}>
               <div className="d-flex align-items-center">
                 <i className="bi bi-award-fill text-warning fs-3 me-3"></i>
                 <div>
-                  <h6 className="mb-0 text-white fw-bold">ISO 9001:2015 Certified • 3 Locations</h6>
-                  <small className="text-white-50">Ambattur, Kattur (Chennai) & Kotthattai (Cuddalore)</small>
+                  <h6 className="mb-0 text-white fw-bold">ISO 9001:2015 Certified • 2 Manufacturing Units</h6>
+                  <small className="text-white-50">Thirumullaivoyal (Unit-1) & Cuddalore (Unit-2)</small>
                 </div>
               </div>
             </div>

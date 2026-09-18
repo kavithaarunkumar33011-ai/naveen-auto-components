@@ -10,7 +10,7 @@ export const companyData = {
     "Industrial air ducts & air blowers",
     "Heavy fabrication product handling & crane logistics"
   ],
-  about: "Naveen Auto Components (Est. 2017) is a trusted one-stop manufacturing company for Ferrous and Non-Ferrous metal fabrication. We specialize in industrial process equipment, PEB structural fabrication, industrial pipeline ducts, storage tanks, and special-purpose engineering equipment. Backed by state-of-the-art CNC machinery, ~3,000 sq ft covered factory space, 1 Lakh sq ft open space across 3 locations in Chennai and Cuddalore, and strict ISO 9001:2015 quality management systems, we deliver precision heavy engineering solutions tailored to industrial clients across Tamil Nadu and South India.",
+  about: "Naveen Auto Components (Est. 2017) is a trusted one-stop manufacturing company for Ferrous and Non-Ferrous metal fabrication. We specialize in industrial process equipment, PEB structural fabrication, industrial pipeline ducts, storage tanks, and special-purpose engineering equipment. Backed by state-of-the-art CNC machinery, ~3,000 sq ft covered factory space, 1 Lakh sq ft open space across 2 manufacturing units (Thirumullaivoyal Fabrication Unit-1 & Cuddalore Fabrication Unit-2), and strict ISO 9001:2015 quality management systems, we deliver precision heavy engineering solutions tailored to industrial clients across Tamil Nadu and South India.",
   qualityPolicy: "We are committed to manufacturing and delivering products that comply with customer satisfaction — right-quality fabricated products, prompt delivery, competitive pricing, and continual QMS improvement per ISO 9001:2015 standards.",
   qualityObjectives: [
     "100% Customer Satisfaction",
@@ -35,21 +35,21 @@ export const companyData = {
   },
   locations: {
     office: {
-      title: "Registered Office",
+      title: "Registered Office (Ambattur)",
       address: "No. 2C/5, SP-64, 3rd Main Road, Ambattur Industrial Estate, Chennai – 600058",
       area: "Ambattur Industrial Estate",
       mapEmbed: "https://maps.google.com/maps?q=Ambattur+Industrial+Estate+3rd+Main+Road+Chennai&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     unit1: {
-      title: "Fabrication Unit 1 (Chennai)",
+      title: "Thirumullaivoyal Unit - Fabrication Unit-1",
       address: "No. T93, SIDCO Women's Industrial Park, Thirumullaivoyal, Tiruvallur District, Tamil Nadu – 600062",
       highlights: "High-speed CNC Laser cutting, Press Brake, Shearing, Rolling & ~3,000 Sq.Ft Factory Shed with 10 MT EOT Crane",
       mapEmbed: "https://maps.google.com/maps?q=SIDCO+Womens+Industrial+Park+Thirumullaivoyal+Chennai&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     unit2: {
-      title: "Fabrication Unit 2 (Cuddalore)",
+      title: "Cuddalore Unit - Fabrication Unit-2",
       address: "No. 94/2D, Cuddalore–Chidambaram Road (NH-32), Kotthattai Village, Chidambaram – 608501",
-      highlights: "Heavy structural & large diameter pipe rolling facility with 1 Lakh Sq.Ft total open space across 3 locations",
+      highlights: "Heavy structural & large diameter pipe rolling facility with 1 Lakh Sq.Ft total open space",
       mapEmbed: "https://maps.google.com/maps?q=Kotthattai+Chidambaram+Tamil+Nadu&t=&z=15&ie=UTF8&iwloc=&output=embed"
     }
   },
@@ -92,7 +92,7 @@ export const companyData = {
     { value: "60 Tons", label: "Monthly Capacity" },
     { value: "300-400 Tons", label: "Yearly Capacity" },
     { value: "~3,000 Sq.Ft", label: "Factory Covered Area" },
-    { value: "1 Lakh Sq.Ft", label: "Open Space (3 Locations)" },
+    { value: "1 Lakh Sq.Ft", label: "TOTAL OPEN SPACE" },
     { value: "10 MT", label: "EOT Crane Capacity" },
     { value: "ISO 9001:2015", label: "Quality Certified" }
   ]

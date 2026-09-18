@@ -70,9 +70,9 @@ export const infrastructureData = [
   },
   {
     title: "1 Lakh Sq.Ft Total Open Space",
-    capacity: "1,00,000 Sq.Ft Open Space Across 3 Locations",
+    capacity: "1,00,000 Sq.Ft Total Open Space",
     location: "Ambattur, Thirumullaivoyal & Cuddalore Units",
-    details: "Spacious open yards across 3 locations for raw material staging, shot blasting, protective spray painting, and flatbed truck loading."
+    details: "Spacious open yards across our manufacturing units for raw material staging, shot blasting, protective spray painting, and flatbed truck loading."
   },
   {
     title: "Cuddalore Heavy Manufacturing Unit",

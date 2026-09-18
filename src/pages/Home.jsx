@@ -45,7 +45,7 @@ export const Home = () => {
               { label: "Year Established", value: "2017" },
               { label: "Factory Covered Area", value: "~3,000 Sq Ft" },
               { label: "Monthly / Yearly Capacity", value: "60 Tons / 300-400 Tons" },
-              { label: "Total Open Space", value: "1 Lakh Sq Ft (3 Locations)" }
+              { label: "TOTAL OPEN SPACE", value: "1 Lakh Sq Ft" }
             ].map((stat, idx) => (
               <Col md={3} sm={6} key={idx}>
                 <div className="stat-box py-2">
@@ -66,10 +66,10 @@ export const Home = () => {
               ISO 9001:2015 Certified Precision Manufacturing
             </Badge>
             <h2 className="display-6 fw-bold text-navy mb-4">
-              Our 3 Locations Footprint in Chennai & Cuddalore
+              Our 2 Fabrication Units Footprint in Chennai & Cuddalore
             </h2>
             <p className="lead text-secondary mx-auto max-w-800" style={{ fontSize: '1.15rem', lineHeight: '1.8' }}>
-              Established in 2017, <strong>Naveen Auto Components (NAC)</strong> operates across <strong>3 locations</strong> in <strong>Chennai</strong> (Ambattur Registered Office & SIDCO Kattur Unit 1) and <strong>Cuddalore</strong> (Unit 2, NH-32), featuring <strong>~3,000 Sq.Ft</strong> covered factory area and <strong>1 Lakh Sq.Ft</strong> total open space for ISO 9001:2015 certified heavy engineering metal fabrication.
+              Established in 2017, <strong>Naveen Auto Components (NAC)</strong> performs ISO 9001:2015 certified heavy metal fabrication across <strong>2 manufacturing units</strong>: <strong>Thirumullaivoyal Unit (Fabrication Unit-1)</strong> in Chennai and <strong>Cuddalore Unit (Fabrication Unit-2)</strong>, supported by our Registered Office in Ambattur, featuring <strong>~3,000 Sq.Ft</strong> covered factory area and <strong>1 Lakh Sq.Ft</strong> total open space.
             </p>
           </div>
 
@@ -128,12 +128,12 @@ export const Home = () => {
                       <i className="bi bi-geo-alt-fill fs-4 text-white"></i>
                     </div>
                     <div>
-                      <h3 className="h5 fw-bold text-white mb-0">3 Strategic Locations</h3>
+                      <h3 className="h5 fw-bold text-white mb-0">2 Fabrication Units & Office</h3>
                       <span className="small text-warning font-monospace">Ambattur, Thirumullaivoyal & Cuddalore</span>
                     </div>
                   </div>
                   <p className="small text-white-50 mb-3" style={{ lineHeight: '1.7' }}>
-                    Operating across 3 locations in <strong>Ambattur Registered Office</strong>, <strong>Thirumullaivoyal (Unit 1)</strong>, and <strong>Cuddalore (Unit 2, NH-32)</strong> featuring ~3,000 Sq.Ft factory area and 1 Lakh Sq.Ft total open space.
+                    Manufacturing across 2 units: <strong>Thirumullaivoyal (Fabrication Unit-1)</strong> and <strong>Cuddalore (Fabrication Unit-2)</strong> alongside our Ambattur Registered Office, featuring ~3,000 Sq.Ft factory area and 1 Lakh Sq.Ft total open space.
                   </p>
                   <a 
                     href={companyData.googleShareLink || 'https://share.google/U57zAGwxO9ujDK0uy'} 
@@ -404,7 +404,7 @@ export const Home = () => {
                 </div>
                 <h3 className="h5 fw-bold text-white mb-2">We Deliver</h3>
                 <p className="small text-white-50 mb-0" style={{ lineHeight: '1.7' }}>
-                  10 MT EOT crane maneuvering, 1 Lakh sq.ft total open space across 3 locations, and 100% on-time dispatch logistics across India.
+                  10 MT EOT crane maneuvering, 1 Lakh sq.ft total open space across 2 manufacturing units, and 100% on-time dispatch logistics across India.
                 </p>
               </div>
             </Col>

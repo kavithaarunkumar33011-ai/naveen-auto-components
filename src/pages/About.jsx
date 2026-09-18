@@ -82,10 +82,10 @@ export const About = () => {
 
               <div className="p-4 rounded-3 bg-light border-start border-warning border-4 mb-4 shadow-sm">
                 <h3 className="h6 fw-bold text-navy mb-2">
-                  <i className="bi bi-geo-alt-fill text-warning me-2" style={{ color: '#f57c00' }}></i> Corporate Offices & 3 Locations Network
+                  <i className="bi bi-geo-alt-fill text-warning me-2" style={{ color: '#f57c00' }}></i> Registered Office & 2 Fabrication Units
                 </h3>
                 <p className="small text-secondary mb-0" style={{ lineHeight: '1.75' }}>
-                  Headquartered at <strong>No-T93, SIDCO Women Industrial Park, Kattur, Thirumullaivoyal, Chennai - 600062</strong> with our Registered Office at <strong>Ambattur Industrial Estate</strong> and a fabrication unit on <strong>Cuddalore-Chidambaram Road (NH-32), Kotthattai Village, Chidambaram - 608501</strong>, offering <strong>~3,000 Sq.Ft</strong> covered factory area and <strong>1 Lakh Sq.Ft</strong> total open space across all 3 locations, we are committed to producing & meeting customer satisfaction, Deliver On-Time and at economical prices.
+                  Our primary manufacturing plant is located at <strong>Thirumullaivoyal Unit (Fabrication Unit-1): No-T93, SIDCO Women Industrial Park, Kattur, Thirumullaivoyal, Chennai - 600062</strong>, with our Registered Office at <strong>Ambattur Industrial Estate</strong> and our heavy rolling & fabrication plant at <strong>Cuddalore Unit (Fabrication Unit-2): No-94/2D, Cuddalore-Chidambaram Road (NH-32), Kotthattai Village, Chidambaram - 608501</strong>. Offering <strong>~3,000 Sq.Ft</strong> covered factory area and <strong>1 Lakh Sq.Ft</strong> total open space across our facilities, we are committed to producing & meeting customer satisfaction, prompt delivery, and competitive pricing.
                 </p>
               </div>
 
@@ -125,7 +125,7 @@ export const About = () => {
                       "Hydraulic Press Brake - 8mm x 2500mm",
                       "Plate Rolling Machine - 16mm x 2500mm",
                       "MIG Welding & TIG Welding Infrastructure",
-                      "Open Space Area - 1 Lakh Sq Ft (Across 3 Locations)"
+                      "Open Space Area - 1 Lakh Sq Ft (Across 2 Units)"
                     ].map((facility, idx) => (
                       <Col key={idx} md={6}>
                         <div className="d-flex align-items-center py-1">

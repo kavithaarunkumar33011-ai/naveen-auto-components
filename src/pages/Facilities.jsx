@@ -22,14 +22,14 @@ export const Facilities = () => {
     "@type": "Place",
     "name": "Naveen Auto Components Manufacturing Plants",
     "url": "https://naveenautocomponents.com/facilities",
-    "description": "State-of-the-art CNC Laser Cutting, CNC Press Brake, 16mm Rolling Machine, 10 MT EOT Crane, ~3,000 sq.ft factory covered area, and 1 Lakh sq.ft open space across 3 locations."
+    "description": "State-of-the-art CNC Laser Cutting, CNC Press Brake, 16mm Rolling Machine, 10 MT EOT Crane, ~3,000 sq.ft factory covered area, and 1 Lakh sq.ft open space across 2 manufacturing units."
   };
 
   return (
     <>
       <SEO 
         title="Manufacturing Infrastructure & Facilities | Naveen Auto Components"
-        description="Naveen Auto Components (naveenautocomponents.com) manufacturing infrastructure across 3 locations in Chennai & Cuddalore: 6kW CNC laser cutter, press brake, 16mm plate rolling, 10 MT crane & 1 Lakh sq ft open space."
+        description="Naveen Auto Components (naveenautocomponents.com) manufacturing infrastructure across 2 units in Thirumullaivoyal & Cuddalore: 6kW CNC laser cutter, press brake, 16mm plate rolling, 10 MT crane & 1 Lakh sq ft open space."
         keywords="naveenautocomponents.com, Naveen Auto Components facilities, CNC laser cutting Chennai, plate rolling machine Cuddalore, heavy fabrication plant Tamil Nadu, NAC machinery"
         canonical="/facilities"
         schema={facilitiesSchema}
@@ -49,9 +49,9 @@ export const Facilities = () => {
             <Badge bg="warning" className="text-navy fw-bold px-3 py-2 text-uppercase mb-2" style={{ backgroundColor: '#f57c00' }}>
               Strategic Manufacturing Footprint
             </Badge>
-            <h2 className="display-6 fw-bold text-navy mb-3">3 Locations Network for Heavy Fabrication in Chennai and Cuddalore</h2>
+            <h2 className="display-6 fw-bold text-navy mb-3">2 Manufacturing Units Network for Heavy Fabrication in Chennai and Cuddalore</h2>
             <p className="text-secondary lead">
-              Three strategic locations in Tamil Nadu (Ambattur Registered Office, Thirumullaivoyal Unit 1, and Cuddalore Unit 2) for optimal regional supply chains. Click any image to view in full page with zoom.
+              Two strategic manufacturing units in Tamil Nadu — Thirumullaivoyal Unit (Fabrication Unit-1) and Cuddalore Unit (Fabrication Unit-2), supported by our Ambattur Registered Office. Click any image to view in full page with zoom.
             </p>
           </div>
 
@@ -83,9 +83,9 @@ export const Facilities = () => {
                     </div>
                     <div>
                       <Badge bg="warning" className="text-navy fw-bold px-2 py-1 mb-1" style={{ backgroundColor: '#f57c00' }}>
-                        UNIT 1 — CHENNAI
+                        FABRICATION UNIT-1 — CHENNAI
                       </Badge>
-                      <h3 className="h5 fw-bold text-navy mb-1">Fabrication Unit 1 (Chennai)</h3>
+                      <h3 className="h5 fw-bold text-navy mb-1">Thirumullaivoyal Unit - Fabrication Unit-1</h3>
                       <p className="text-muted small mb-0" style={{ lineHeight: '1.4' }}>
                         <strong>Address:</strong> No. T93, SIDCO Women's Industrial Park, Thirumullaivoyal, Tiruvallur District, Tamil Nadu – 600062
                       </p>
@@ -94,7 +94,7 @@ export const Facilities = () => {
                   <ul className="list-unstyled text-secondary small mb-0 pt-3 border-top">
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> ~3,000 Sq.Ft Covered Assembly Shed</li>
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 10 MT Overhead EOT Crane Rigging</li>
-                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 1 Lakh Sq.Ft Total Open Space (3 Locations)</li>
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 1 Lakh Sq.Ft Total Open Space</li>
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> High-Speed CNC Laser & Press Brake Setup</li>
                   </ul>
                 </Card.Body>
@@ -128,9 +128,9 @@ export const Facilities = () => {
                     </div>
                     <div>
                       <Badge bg="warning" className="text-navy fw-bold px-2 py-1 mb-1" style={{ backgroundColor: '#f57c00' }}>
-                        UNIT 2 — CUDDALORE
+                        FABRICATION UNIT-2 — CUDDALORE
                       </Badge>
-                      <h3 className="h5 fw-bold text-navy mb-1">Fabrication Unit 2 (Cuddalore)</h3>
+                      <h3 className="h5 fw-bold text-navy mb-1">Cuddalore Unit - Fabrication Unit-2</h3>
                       <p className="text-muted small mb-0" style={{ lineHeight: '1.4' }}>
                         <strong>Address:</strong> No. 94/2D, Cuddalore–Chidambaram Road (NH-32), Kotthattai Village, Chidambaram – 608501
                       </p>
@@ -138,7 +138,7 @@ export const Facilities = () => {
                   </div>
                   <ul className="list-unstyled text-secondary small mb-0 pt-3 border-top">
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> Heavy Structural Fabrication Facility</li>
-                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 1 Lakh Sq.Ft Total Open Space Across 3 Locations</li>
+                    <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> 1 Lakh Sq.Ft Total Open Space</li>
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> Heavy 16mm Plate Rolling & Header Pipe Assembly</li>
                     <li className="mb-2"><i className="bi bi-check-circle-fill text-success me-2"></i> Direct Highway Access for Oversized Flatbeds</li>
                   </ul>
@@ -224,7 +224,7 @@ export const Facilities = () => {
                     </Badge>
                     <h3 className="h4 fw-bold text-navy mb-3">10 MT Overhead EOT Crane & Open Yards</h3>
                     <p className="text-secondary mb-0" style={{ lineHeight: '1.6' }}>
-                      Unit 1 features a ~3,000 sq.ft covered factory shed with a <strong>10 MT EOT crane</strong>. Across all 3 locations in Chennai & Cuddalore, NAC provides <strong>1 Lakh sq.ft total open space</strong> for heavy vessel fit-up, plate rolling, and flatbed loading.
+                      Unit 1 features a ~3,000 sq.ft covered factory shed with a <strong>10 MT EOT crane</strong>. Across both manufacturing units in Thirumullaivoyal & Cuddalore, NAC provides <strong>1 Lakh sq.ft total open space</strong> for heavy vessel fit-up, plate rolling, and flatbed loading.
                     </p>
                   </div>
                 </Card.Body>
