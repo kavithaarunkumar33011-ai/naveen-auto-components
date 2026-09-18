@@ -21,8 +21,9 @@ export const FloatingActions = () => {
     });
   };
 
-  const rawPhone = companyData.contact?.mobile ? companyData.contact.mobile.replace(/[^0-9]/g, '') : '919790942501';
-  const displayPhone = companyData.contact?.mobile || '+91-9790942501';
+  const digits = companyData.contact?.mobile ? companyData.contact.mobile.replace(/[^0-9]/g, '') : '917550277799';
+  const rawPhone = digits.length === 10 ? `91${digits}` : digits;
+  const displayPhone = companyData.contact?.mobile || '+91 75502 77799';
 
   return (
     <>

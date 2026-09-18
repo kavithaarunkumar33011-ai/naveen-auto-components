@@ -22,7 +22,7 @@ export const companyData = {
   contact: {
     email: "naveenauto2017@gmail.com",
     tel: "+91 44 2636 0415",
-    mobile: "+91-9790942501",
+    mobile: "+91 75502 77799",
     hours: "Monday – Saturday: 9:00 AM – 6:00 PM (Sunday Closed)"
   },
   googleShareLink: "https://share.google/U57zAGwxO9ujDK0uy",
