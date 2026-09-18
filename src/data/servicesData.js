@@ -94,15 +94,8 @@ export const servicesData = [
         id: "peb-structural-building_1",
         src: "/images/hd/services/peb-structural-building_1.jpeg",
         alt: "PEB Structural Fabrication - Industrial Building Framework Spec 2",
-        title: "PEB Structural Building - Additional Spec 2",
+        title: "PEB Structural Building - Spec 2",
         desc: "Precision welded steel columns, beams, and overhead roof truss assemblies."
-      },
-      {
-        id: "peb-structural-fabrication",
-        src: "/images/hd/projects/peb-structural-fabrication.jpeg",
-        alt: "PEB Structural Fabrication - Shop Floor Structural Work",
-        title: "PEB Structural Steelwork - Spec 3",
-        desc: "High-load capacity structural beam and handrail sub-assemblies."
       }
     ]
   },
