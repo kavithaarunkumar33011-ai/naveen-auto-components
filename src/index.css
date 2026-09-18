@@ -603,3 +603,91 @@ img, video, iframe {
   }
 }
 
+/* ==========================================================================
+   Ultra-Fluid Animated Custom Mouse Pointer System
+   ========================================================================== */
+.custom-cursor-dot {
+  position: fixed;
+  top: -4px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #f57c00;
+  pointer-events: none;
+  z-index: 99999;
+  opacity: 0;
+  box-shadow: 0 0 10px rgba(245, 124, 0, 0.9), 0 0 20px rgba(245, 124, 0, 0.5);
+  transition: opacity 0.3s ease, width 0.25s ease, height 0.25s ease, top 0.25s ease, left 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+.custom-cursor-ring {
+  position: fixed;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(245, 124, 0, 0.65);
+  background: rgba(245, 124, 0, 0.04);
+  pointer-events: none;
+  z-index: 99998;
+  opacity: 0;
+  box-shadow: 0 0 15px rgba(245, 124, 0, 0.15);
+  transition: opacity 0.3s ease, width 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), height 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), top 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), left 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+/* Visibility State */
+.custom-cursor-dot.is-visible,
+.custom-cursor-ring.is-visible {
+  opacity: 1;
+}
+
+/* Interactive Element Hover Expansion */
+.custom-cursor-ring.is-hovered {
+  top: -30px;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  border-color: #f57c00;
+  background: rgba(245, 124, 0, 0.12);
+  box-shadow: 0 0 25px rgba(245, 124, 0, 0.45), inset 0 0 15px rgba(245, 124, 0, 0.2);
+}
+
+.custom-cursor-dot.is-hovered {
+  top: -6px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: #0b1e36;
+  box-shadow: 0 0 12px rgba(11, 30, 54, 0.9), 0 0 20px rgba(245, 124, 0, 0.6);
+}
+
+/* Click Press Micro-Pulse */
+.custom-cursor-ring.is-clicked {
+  width: 28px;
+  height: 28px;
+  top: -14px;
+  left: -14px;
+  border-color: #ff9100;
+  background: rgba(245, 124, 0, 0.3);
+}
+
+.custom-cursor-dot.is-clicked {
+  width: 6px;
+  height: 6px;
+  top: -3px;
+  left: -3px;
+}
+
+/* Mobile & Touch Screen Disable */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}
+
+

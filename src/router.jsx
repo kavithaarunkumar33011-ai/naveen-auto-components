@@ -4,6 +4,7 @@ import { Spinner } from 'react-bootstrap';
 import { MainNavbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { FloatingActions } from './components/FloatingActions';
+import { CustomCursor } from './components/CustomCursor';
 
 // Lazy-loaded page components for fast initial load & Web Vitals optimization
 const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
@@ -47,6 +48,7 @@ const RootLayout = () => {
 
   return (
     <div className="site-wrapper d-flex flex-column min-vh-100 bg-white">
+      <CustomCursor />
       <ScrollRestoration />
       <MainNavbar />
       <main className="flex-grow-1">
